@@ -1,63 +1,62 @@
-/* table {
+* {
+  box-sizing: border-box;
+}
+table {
   width: 978px;
   height: 580px;
   border-collapse: collapse;
-  border: 1px solid black;
   text-align: center;
+  color: #828282;
+  background-image: url("../imgs/rounded-rectangle-2@2x.png");
+  background-size: cover;
 }
 .header-row {
   width: 126px;
-  height: 90px;
+  height: 50px;
   font-size: 25px;
-  border: 1px solid black;
   color: rgb(119, 197, 55);
+  border-left: 2px solid #828282;
 }
 
 .table-row {
   width: 126px;
   height: 90px;
-  border: 1px solid black;
+  border: 2px solid #828282;
 }
 .time-column {
-  border: 1px solid black;
+  border-top: 2px solid #828282;
+  width: 85px;
 }
 .carb-row {
-  width: 126px;
   height: 35px;
-  border: 1px solid black;
+  border-top: 2px solid #828282;
+  border-right: 2px solid #828282;
 }
 .bottom-row {
-  width: 126px;
   height: 33px;
-  border: 1px solid black;
+  border-top: 2px solid #828282;
+  border-right: 2px solid #828282;
 }
+
 .print-row {
-  border: 1px solid black;
+  align-items: center;
 }
 
 .vertical-row {
-  border: 1px solid black;
+  border-top: 2px solid #828282;
 }
 .vertical {
   transform: rotate(-90deg);
   /* -webkit-transform: rotate(-90deg); /* Safari/Chrome */
-/* -moz-transform: rotate(-90deg); /* Firefox */
-/* -o-transform: rotate(-90deg); Opera */
-/* -ms-transform: rotate(-90deg); IE 9 */
-.table {
-  width: 978px;
-  height: 580px;
-  display: flex;
-  border: 1px solid black;
+  /* -moz-transform: rotate(-90deg); /* Firefox */
+  /* -o-transform: rotate(-90deg); Opera */
+  /* -ms-transform: rotate(-90deg); IE 9 */
 }
-.time {
-  width: 85px;
+
+.happy-logo {
+  transform: rotate(-90deg);
 }
-.table-column {
-  width: 63px;
-  height: ;
-  border: 1px solid black;
-}
-.table-row {
-  border: 1px solid black;
+
+td:hover {
+  color: black;
 }
