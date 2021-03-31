@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { ReactComponent as ImportedSVG } from "../imgs/print.svg";
 const table = () => {
   return (
     <table>
@@ -7,27 +8,15 @@ const table = () => {
         <tr>
           <th></th>
           <th className="header-row">DAY 64</th>
-          <th className="header-row">DAY 65</th>
-          <th className="header-row">DAY 66</th>
-          <th className="header-row">DAY 67</th>
-          <th className="header-row">DAY 68</th>
-          <th className="header-row">DAY 69</th>
-          <th className="header-row">DAY 70</th>
+          <th className="header-row title">DAY 65</th>
+          <th className="header-row title">DAY 66</th>
+          <th className="header-row title">DAY 67</th>
+          <th className="header-row title">DAY 68</th>
+          <th className="header-row title">DAY 69</th>
+          <th className="header-row title">DAY 70</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td></td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td rowSpan="6">
-            <div className="vertical">GUILT-FREE DAY</div>
-          </td>
-        </tr>
         <tr>
           <td className="time-column">6:00 AM</td>
           <td className="table-row">Cell</td>
@@ -36,7 +25,9 @@ const table = () => {
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
-          <td></td>
+          <td rowSpan="5" className="vertical-row">
+            <div className="vertical">GUILT-FREE DAY</div>
+          </td>
         </tr>
         <tr>
           <td className="time-column">9:00 AM</td>
@@ -46,7 +37,6 @@ const table = () => {
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
-          <td></td>
         </tr>
         <tr>
           <td className="time-column">12:00 AM</td>
@@ -56,7 +46,6 @@ const table = () => {
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
-          <td></td>
         </tr>
         <tr>
           <td className="time-column">3:00 AM</td>
@@ -66,7 +55,6 @@ const table = () => {
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
-          <td></td>
         </tr>
         <tr>
           <td className="time-column">6:00 AM</td>
@@ -76,19 +64,23 @@ const table = () => {
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
-          <td></td>
         </tr>
         <tr>
-          <td></td>
+          <td className="carb-row"></td>
           <td className="carb-row">Cell</td>
           <td className="carb-row">Cell</td>
           <td className="carb-row">Cell</td>
           <td className="carb-row">Cell</td>
           <td className="carb-row">Cell</td>
-          <td rowSpan="2">Print</td>
+          <td className="carb-row">Cell</td>
+          <td rowSpan="2" className="print-row">
+            <ImportedSVG />
+            Print
+          </td>
         </tr>
         <tr>
           <td className="bottom-row">Workout</td>
+          <td className="bottom-row">Cell</td>
           <td className="bottom-row">Cell</td>
           <td className="bottom-row">Cell</td>
           <td className="bottom-row">Cell</td>

@@ -2,16 +2,24 @@ table {
   width: 978px;
   height: 580px;
   border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
 }
 .header-row {
   width: 126px;
   height: 90px;
-
   font-size: 25px;
+  border: 1px solid black;
+  color: rgb(119, 197, 55);
+}
+.title {
 }
 .table-row {
   width: 126px;
   height: 90px;
+  border: 1px solid black;
+}
+.time-column {
   border: 1px solid black;
 }
 .carb-row {
@@ -24,6 +32,17 @@ table {
   height: 33px;
   border: 1px solid black;
 }
+.print-row {
+  border: 1px solid black;
+}
+
+.vertical-row {
+  border: 1px solid black;
+}
 .vertical {
   transform: rotate(-90deg);
+  /* -webkit-transform: rotate(-90deg); /* Safari/Chrome */
+  /* -moz-transform: rotate(-90deg); /* Firefox */
+  /* -o-transform: rotate(-90deg); Opera */
+  /* -ms-transform: rotate(-90deg); IE 9 */
 }
