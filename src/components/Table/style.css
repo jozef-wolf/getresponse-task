@@ -37,7 +37,6 @@ table {
   border-top: 2px solid #828282;
   border-right: 2px solid #828282;
 }
-
 .print-row {
   align-items: center;
 }
@@ -51,10 +50,6 @@ table {
   /* -moz-transform: rotate(-90deg); /* Firefox */
   /* -o-transform: rotate(-90deg); Opera */
   /* -ms-transform: rotate(-90deg); IE 9 */
-}
-
-.happy-logo {
-  transform: rotate(-90deg);
 }
 
 td:hover {

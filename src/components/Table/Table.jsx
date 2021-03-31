@@ -33,7 +33,7 @@ const table = () => {
           <td rowSpan="5" className="vertical-row">
             <div className="vertical">
               <img className="happy-logo" src={Happy} alt="" />
-              <p>GUILT-FREE DAY</p>
+              GUILTY-FREE DAY
             </div>
           </td>
         </tr>
@@ -83,7 +83,7 @@ const table = () => {
           <td className="carb-row"></td>
           <td rowSpan="2" className="print-row">
             <ImportedSVG />
-            <p>Print</p>
+            Print
           </td>
         </tr>
         <tr>
