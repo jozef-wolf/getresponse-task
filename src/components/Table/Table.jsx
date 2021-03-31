@@ -7,7 +7,7 @@ import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 import Rectangle from "../imgs/rectangle2x.png";
 import Happy from "../imgs/happy2x.png";
 
-const table = () => {
+const Table = () => {
   return (
     <table>
       <thead>
@@ -118,4 +118,4 @@ const table = () => {
   );
 };
 
-export default table;
+export default Table;
