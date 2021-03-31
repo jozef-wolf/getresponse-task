@@ -6,6 +6,7 @@ import Dumbbell from "../imgs/Dumbbell2x.png";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 import Rectangle from "../imgs/rectangle2x.png";
 import Happy from "../imgs/happy2x.png";
+
 const table = () => {
   return (
     <table>
@@ -24,12 +25,12 @@ const table = () => {
       <tbody>
         <tr>
           <td className="time-column">6:00 AM</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
           <td rowSpan="5" className="vertical-row">
             <div className="vertical">
               <img className="happy-logo" src={Happy} alt="" />
@@ -39,39 +40,39 @@ const table = () => {
         </tr>
         <tr>
           <td className="time-column">9:00 AM</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
         </tr>
         <tr>
           <td className="time-column">12:00 AM</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
         </tr>
         <tr>
           <td className="time-column">3:00 AM</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
         </tr>
         <tr>
           <td className="time-column">6:00 AM</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
-          <td className="table-row">Cell</td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
+          <td className="table-row"></td>
         </tr>
         <tr>
           <td className="carb-row"></td>
