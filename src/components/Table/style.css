@@ -1,3 +1,15 @@
+@font-face {
+  font-family: HelveticaNeueLTStd-Md;
+  src: url("../fonts/HelveticaNeueLTStd-Md.otf");
+  font-family: HelveticaNeueLTStd-Lt;
+  src: url("../fonts/HelveticaNeueLTStd-Lt.otf");
+
+  font-family: HelveticaNeueLTStd-Roman;
+  src: url("../fonts/HelveticaNeueLTStd-Roman.otf");
+
+  font-family: HelveticaNeueLTStd-Bd;
+  src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
+}
 * {
   box-sizing: border-box;
 }
@@ -14,20 +26,24 @@ table {
   width: 126px;
   height: 50px;
   font-size: 25px;
-  color: rgb(119, 197, 55);
+  font-family: HelveticaNeueLTStd-Md;
+  color: #adbb0c;
   border-left: 2px solid #828282;
 }
 
 .table-row {
+  font-family: Arial;
   width: 126px;
   height: 90px;
   border: 2px solid #828282;
 }
 .time-column {
+  font-family: HelveticaNeueLTStd-Bd;
   border-top: 2px solid #828282;
   width: 85px;
 }
 .carb-row {
+  font-family: HelveticaNeueLTStd-Roman;
   height: 35px;
   border-top: 2px solid #828282;
   border-right: 2px solid #828282;
@@ -36,8 +52,10 @@ table {
   height: 33px;
   border-top: 2px solid #828282;
   border-right: 2px solid #828282;
+  font-family: HelveticaNeueLTStd-Roman;
 }
 .print-row {
+  font-family: HelveticaNeueLTStd-Roman;
   align-items: center;
 }
 
@@ -45,6 +63,7 @@ table {
   border-top: 2px solid #828282;
 }
 .vertical {
+  font-family: HelveticaNeueLTStd-Lt;
   transform: rotate(-90deg);
   /* -webkit-transform: rotate(-90deg); /* Safari/Chrome */
   /* -moz-transform: rotate(-90deg); /* Firefox */
