@@ -1,25 +1,29 @@
 table {
-  width: 489px;
-  height: 290px;
-  margin: 12px 395.5px 22.5px;
+  width: 978px;
+  height: 580px;
+  border-collapse: collapse;
 }
 .header-row {
-  width: 63px;
-  height: 25px;
-  margin: 0 65px 1px 0;
-  padding: 7.5px 11px 8px 11.5px;
-  font-size: 12.5px;
+  width: 126px;
+  height: 90px;
+
+  font-size: 25px;
 }
 .table-row {
-  width: 63px;
-  height: 45px;
+  width: 126px;
+  height: 90px;
   border: 1px solid black;
 }
 .carb-row {
-  width: 63px;
-  height: 17.5px;
+  width: 126px;
+  height: 35px;
+  border: 1px solid black;
 }
-.bottom-rwo {
-  width: 63px;
-  height: 16.5px;
+.bottom-row {
+  width: 126px;
+  height: 33px;
+  border: 1px solid black;
+}
+.vertical {
+  transform: rotate(-90deg);
 }

@@ -24,10 +24,12 @@ const table = () => {
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
-          <td rowSpan="6">dupa</td>
+          <td rowSpan="6">
+            <div className="vertical">GUILT-FREE DAY</div>
+          </td>
         </tr>
         <tr>
-          <td>6:00 AM</td>
+          <td className="time-column">6:00 AM</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
@@ -37,7 +39,7 @@ const table = () => {
           <td></td>
         </tr>
         <tr>
-          <td>9:00 AM</td>
+          <td className="time-column">9:00 AM</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
@@ -47,7 +49,7 @@ const table = () => {
           <td></td>
         </tr>
         <tr>
-          <td>12:00 AM</td>
+          <td className="time-column">12:00 AM</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
@@ -57,7 +59,7 @@ const table = () => {
           <td></td>
         </tr>
         <tr>
-          <td>3:00 AM</td>
+          <td className="time-column">3:00 AM</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
@@ -67,7 +69,7 @@ const table = () => {
           <td></td>
         </tr>
         <tr>
-          <td>6:00 AM</td>
+          <td className="time-column">6:00 AM</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
           <td className="table-row">Cell</td>
@@ -83,18 +85,15 @@ const table = () => {
           <td className="carb-row">Cell</td>
           <td className="carb-row">Cell</td>
           <td className="carb-row">Cell</td>
-          <td className="carb-row">Cell</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td rowSpan="2">Workout</td>
-          <td className="bottom-row">Cell</td>
-          <td className="bottom-row">Cell</td>
-          <td className="bottom-row">Cell</td>
-          <td className="bottom-row">Cell</td>
-          <td className="bottom-row">Cell</td>
-          <td className="bottom-row">Cell</td>
           <td rowSpan="2">Print</td>
+        </tr>
+        <tr>
+          <td className="bottom-row">Workout</td>
+          <td className="bottom-row">Cell</td>
+          <td className="bottom-row">Cell</td>
+          <td className="bottom-row">Cell</td>
+          <td className="bottom-row">Cell</td>
+          <td className="bottom-row">Cell</td>
         </tr>
       </tbody>
     </table>
