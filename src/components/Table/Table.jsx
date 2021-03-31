@@ -7,13 +7,13 @@ import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 import Rectangle from "../imgs/rectangle2x.png";
 import Happy from "../imgs/happy2x.png";
 
-const Table = () => {
+const Table = ({ meals }) => {
   return (
     <table>
       <thead>
         <tr>
           <th></th>
-          <th className="header-row">DAY 64</th>
+          <th className="header-row title">DAY 64</th>
           <th className="header-row title">DAY 65</th>
           <th className="header-row title">DAY 66</th>
           <th className="header-row title">DAY 67</th>

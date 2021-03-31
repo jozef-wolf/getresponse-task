@@ -22,7 +22,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Section />
-      <Table meals={meals} />
+      {/* Conditional templating in react */}
+      {meals && <Table meals={meals} />}
       <Aside />
     </div>
   );
