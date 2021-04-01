@@ -4,6 +4,7 @@ import Table from "./components/Table/Table";
 import Aside from "./components/aside/Aside";
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import { mappedContentForHeader } from "./components/Table/contentForHeader";
 
 function App() {
   const [meals, setMeals] = useState(null);
@@ -23,7 +24,9 @@ function App() {
       <Navbar />
       <Section />
       {/* Conditional templating in react */}
-      {meals && <Table meals={meals} />}
+      {meals && (
+        <Table meals={meals} mappedContentForHeader={mappedContentForHeader} />
+      )}
       <Aside />
     </div>
   );

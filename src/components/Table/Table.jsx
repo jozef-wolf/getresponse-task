@@ -3,56 +3,44 @@ import "./style.css";
 // import { ReactComponent as ImportedSVG } from "../imgs/print.svg";
 // import { ReactComponent as Check } from "../imgs/check.svg";
 // import Dumbbell from "../imgs/Dumbbell2x.png";
-// import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
+import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 // import Rectangle from "../imgs/rectangle2x.png";
 // // import Happy from "../imgs/happy2x.png";
 
 const Table = ({ meals }) => {
+  const rowHeaders = [
+    "",
+    "6:00AM",
+    "9:00AM",
+    "12:00AM",
+    "3:00PM",
+    "6:00PM",
+    " ",
+    "Workout",
+  ];
+  const columnKeys = Object.keys(meals[0]);
+
   return (
-    <table>
-      <tr>
-        <th></th>
-        {meals.map((meal) => (
-          <td>DAY {meal.id}</td>
-        ))}
-      </tr>
-      <tr>
-        <th>6:00AM</th>
-        {meals.map((meal) => (
-          <td>{meal.sixAM}</td>
-        ))}
-      </tr>
-      <tr>
-        <th>9:00AM</th>
-        {meals.map((meal) => (
-          <td>{meal.nineAM}</td>
-        ))}
-      </tr>
-      <tr>
-        <th>12:00AM</th>
-        {meals.map((meal) => (
-          <td>{meal.twelveAM}</td>
-        ))}
-      </tr>
-      <tr>
-        <th>3:00PM</th>
-        {meals.map((meal) => (
-          <td>{meal.threePM}</td>
-        ))}
-      </tr>
-      <tr>
-        <th>6:00PM</th>
-        {meals.map((meal) => (
-          <td>{meal.sixPM}</td>
-        ))}
-      </tr>
-      <tr>
-        <th></th>
-      </tr>
-      <tr>
-        <th>Workout</th>
-      </tr>
-    </table>
+    <>
+      <table>
+        <tbody>
+          {rowHeaders.map((header, index) => (
+            <tr key={header}>
+              <th>{header}</th>
+              {meals.map((meal) => (
+                <td key={meal.id}>{meal[columnKeys[index]]}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Workout</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </>
   );
 };
 

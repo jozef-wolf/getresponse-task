@@ -69,3 +69,7 @@
 /* -moz-transform: rotate(-90deg); /* Firefox */
 /* -o-transform: rotate(-90deg); Opera */
 /* -ms-transform: rotate(-90deg); IE 9 */
+td,
+th {
+  border: 1px solid black;
+}
