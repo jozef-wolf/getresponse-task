@@ -9,11 +9,6 @@
   src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 table {
   width: 978px;
   height: 580px;
@@ -22,10 +17,6 @@ table {
   color: #828282;
   background-image: url("../imgs/rounded-rectangle-2@2x.png");
   background-size: cover;
-}
-
-.table-header {
-  width: 85px;
 }
 
 /* .vertical {

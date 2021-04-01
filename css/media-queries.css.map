@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/styles/mixins/media-queries.scss"
+    ],
+    "names": [],
+    "file": "media-queries.css"
+}
