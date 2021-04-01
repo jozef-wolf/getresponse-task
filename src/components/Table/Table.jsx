@@ -7,6 +7,10 @@ import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 // import Rectangle from "../imgs/rectangle2x.png";
 // // import Happy from "../imgs/happy2x.png";
 
+const totalItems = 6;
+
+const items = new Array(totalItems).fill(null);
+
 const Table = ({ meals }) => {
   const rowHeaders = [
     "",
@@ -16,7 +20,6 @@ const Table = ({ meals }) => {
     "3:00PM",
     "6:00PM",
     " ",
-    "Workout",
   ];
   const columnKeys = Object.keys(meals[0]);
 
@@ -36,7 +39,11 @@ const Table = ({ meals }) => {
         <tfoot>
           <tr>
             <td>Workout</td>
-            <td></td>
+            {items.map((_, idx) => (
+              <td key={idx}>
+                <img src={DumbbellGrey} alt="" />
+              </td>
+            ))}
           </tr>
         </tfoot>
       </table>
