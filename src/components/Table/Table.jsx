@@ -10,11 +10,48 @@ import "./style.css";
 const Table = ({ meals }) => {
   return (
     <table>
-      {meals.map((meal) => (
-        <tr>
-          <th>{meal.id}</th>
-        </tr>
-      ))}
+      <tr>
+        <th></th>
+        {meals.map((meal) => (
+          <td>DAY {meal.id}</td>
+        ))}
+      </tr>
+      <tr>
+        <th>6:00AM</th>
+        {meals.map((meal) => (
+          <td>{meal.sixAM}</td>
+        ))}
+      </tr>
+      <tr>
+        <th>9:00AM</th>
+        {meals.map((meal) => (
+          <td>{meal.nineAM}</td>
+        ))}
+      </tr>
+      <tr>
+        <th>12:00AM</th>
+        {meals.map((meal) => (
+          <td>{meal.twelveAM}</td>
+        ))}
+      </tr>
+      <tr>
+        <th>3:00PM</th>
+        {meals.map((meal) => (
+          <td>{meal.threePM}</td>
+        ))}
+      </tr>
+      <tr>
+        <th>6:00PM</th>
+        {meals.map((meal) => (
+          <td>{meal.sixPM}</td>
+        ))}
+      </tr>
+      <tr>
+        <th></th>
+      </tr>
+      <tr>
+        <th>Workout</th>
+      </tr>
     </table>
   );
 };
