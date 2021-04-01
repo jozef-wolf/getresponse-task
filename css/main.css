@@ -3,16 +3,17 @@
   src: url("../fonts/HelveticaNeueLTStd-Md.otf");
   font-family: HelveticaNeueLTStd-Lt;
   src: url("../fonts/HelveticaNeueLTStd-Lt.otf");
-
   font-family: HelveticaNeueLTStd-Roman;
   src: url("../fonts/HelveticaNeueLTStd-Roman.otf");
-
   font-family: HelveticaNeueLTStd-Bd;
   src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
 }
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 table {
   width: 978px;
   height: 580px;
@@ -22,6 +23,7 @@ table {
   background-image: url("../imgs/rounded-rectangle-2@2x.png");
   background-size: cover;
 }
+
 .table-header {
   width: 85px;
 }
@@ -34,3 +36,4 @@ table {
 /* -o-transform: rotate(-90deg); Opera */
 /* -ms-transform: rotate(-90deg);
 } IE 9 */
+/*# sourceMappingURL=main.css.map */
