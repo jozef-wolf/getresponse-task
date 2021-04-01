@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 // import { ReactComponent as ImportedSVG } from "../imgs/print.svg";
 // import { ReactComponent as Check } from "../imgs/check.svg";
 // import Dumbbell from "../imgs/Dumbbell2x.png";
@@ -29,7 +28,7 @@ const Table = ({ meals }) => {
         <tbody>
           {rowHeaders.map((header, index) => (
             <tr key={header}>
-              <th>{header}</th>
+              <th className="table-header">{header}</th>
               {meals.map((meal) => (
                 <td key={meal.id}>{meal[columnKeys[index]]}</td>
               ))}
