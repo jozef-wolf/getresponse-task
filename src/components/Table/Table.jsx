@@ -2,7 +2,7 @@ import React from "react";
 // import { ReactComponent as ImportedSVG } from "../imgs/print.svg";
 // import { ReactComponent as Check } from "../imgs/check.svg";
 // import Dumbbell from "../imgs/Dumbbell2x.png";
-import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
+import DumbbellGrey from ".../";
 // import Rectangle from "../imgs/rectangle2x.png";
 // // import Happy from "../imgs/happy2x.png";
 

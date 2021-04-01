@@ -4,9 +4,8 @@ table {
   border-collapse: collapse;
   text-align: center;
   color: #828282;
-  background-image: url("../imgs/rounded-rectangle-2@2x.png");
+  background-image: url("/src/imgs/rectangle2x.png");
   background-size: cover;
-  color: red;
 }
 
 /* .vertical {

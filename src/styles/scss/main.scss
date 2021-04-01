@@ -1,4 +1,3 @@
-@use "base/base";
-@use "base/typography";
+@import "base/base";
 
-@use "components/Table.scss";
+@import "components/Table.scss";
