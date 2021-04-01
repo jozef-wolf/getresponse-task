@@ -1,0 +1,12 @@
+@font-face {
+  font-family: HelveticaNeueLTStd-Md;
+  src: url("../fonts/HelveticaNeueLTStd-Md.otf");
+  font-family: HelveticaNeueLTStd-Lt;
+  src: url("../fonts/HelveticaNeueLTStd-Lt.otf");
+  font-family: HelveticaNeueLTStd-Roman;
+  src: url("../fonts/HelveticaNeueLTStd-Roman.otf");
+  font-family: HelveticaNeueLTStd-Bd;
+  src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
+}
+
+/*# sourceMappingURL=typography.css.map */
