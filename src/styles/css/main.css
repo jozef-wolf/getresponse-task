@@ -3,6 +3,17 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: HelveticaNeueLTStd-Md;
+  src: url("../fonts/HelveticaNeueLTStd-Md.otf");
+  font-family: HelveticaNeueLTStd-Lt;
+  src: url("../fonts/HelveticaNeueLTStd-Lt.otf");
+  font-family: HelveticaNeueLTStd-Roman;
+  src: url("../fonts/HelveticaNeueLTStd-Roman.otf");
+  font-family: HelveticaNeueLTStd-Bd;
+  src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
+}
+
 table {
   width: 978px;
   height: 580px;
@@ -21,4 +32,4 @@ table {
 /* -o-transform: rotate(-90deg); Opera */
 /* -ms-transform: rotate(-90deg);
 } IE 9 */
-/*# sourceMappingURL=Table.css.map */
+/*# sourceMappingURL=main.css.map */
