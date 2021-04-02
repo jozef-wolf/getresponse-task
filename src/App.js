@@ -4,7 +4,7 @@ import Table from "./components/Table/Table";
 import Aside from "./components/aside/Aside";
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import "./styles/css/main.css";
+import "./css/"
 function App() {
   const [meals, setMeals] = useState(null);
 
