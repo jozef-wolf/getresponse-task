@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CACvB;;ACFD,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,QAAQ;EACzB,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,OAAO;EACd,gBAAgB,EAAE,0BAA0B;EAC5C,eAAe,EAAE,KAAK;CACvB;;AAED;;+BAE+B;AAC/B,yDAAyD;AACzD,gDAAgD;AAChD,yCAAyC;AACzC;SACS",
-    "sources": [
-        "../scss/main.scss",
-        "../scss/base/base.scss",
-        "../scss/components/Table.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/base/base.scss","../scss/components/Table.scss"],"names":[],"mappings":"AAAA;EACE;;;ACDF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;AAAA;AAAA;AAGA;AACA;AACA;AACA;AAAA","file":"main.css"}

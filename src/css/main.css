@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 table {
@@ -9,7 +8,7 @@ table {
   border-collapse: collapse;
   text-align: center;
   color: #828282;
-  background-image: url("../components/imgs/");
+  background-image: url("/src/imgs/rectangle2x.png");
   background-size: cover;
 }
 
@@ -21,4 +20,5 @@ table {
 /* -o-transform: rotate(-90deg); Opera */
 /* -ms-transform: rotate(-90deg);
 } IE 9 */
+
 /*# sourceMappingURL=main.css.map */

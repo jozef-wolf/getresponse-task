@@ -4,7 +4,7 @@ table {
   border-collapse: collapse;
   text-align: center;
   color: #828282;
-  background-image: url("../components/imgs/");
+  background-image: url("/src/imgs/rectangle2x.png");
   background-size: cover;
 }
 
