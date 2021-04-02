@@ -29,15 +29,29 @@ const Table = ({ meals }) => {
           {rowHeaders.map((header, index) => (
             <tr key={header}>
               <th className="header-column">{header}</th>
-              {meals.map((meal) => (
-                <td key={meal.id} className="meals-column">
-                  {meal[columnKeys[index]]}
-                </td>
-              ))}
+              {index !== rowHeaders.length - 1 ? (
+                meals.slice(0).map((meal) => (
+                  <td key={meal.id} className="meals-column">
+                    {meal[columnKeys[index]]}
+                  </td>
+                ))
+              ) : (
+                <>
+                  {meals.slice(0, -1).map((meal) => (
+                    <td key={meal.id} className="meals-column">
+                      {meal[columnKeys[index]]}
+                    </td>
+                  ))}
+                  <td rowSpan={2}>
+                    <span>
+                      <img src={Print} alt="" />
+                      <p>Print</p>
+                    </span>
+                  </td>
+                </>
+              )}
             </tr>
           ))}
-        </tbody>
-        <tfoot>
           <tr>
             <td>Workout</td>
             {items.map((_, id) => (
@@ -45,14 +59,8 @@ const Table = ({ meals }) => {
                 <img src={DumbbellGrey} alt="" />
               </td>
             ))}
-            <td rowSpan="2">
-              <span>
-                <img src={Print} alt="" />
-                <p>Print</p>
-              </span>
-            </td>
           </tr>
-        </tfoot>
+        </tbody>
       </table>
     </>
   );
