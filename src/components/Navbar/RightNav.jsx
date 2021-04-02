@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
 
+import { AiOutlineUser } from "react-icons/ai";
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -25,14 +26,15 @@ const Ul = styled.ul`
       color: white;
     }
   }
-  @media (min-width: 768px) {
-  }
 `;
 
 const UserUl = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
 `;
 
 const RightNav = ({ open }) => {
@@ -44,7 +46,9 @@ const RightNav = ({ open }) => {
         <li>Challange</li>
       </Ul>
       <UserUl>
-        <li>avatar</li>
+        <li>
+          <AiOutlineUser />
+        </li>
         <li>
           Olivia Wild
           <BiChevronDown />

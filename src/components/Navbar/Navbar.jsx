@@ -2,24 +2,30 @@ import React from "react";
 import styled from "styled-components";
 import Burger from "./Hamburger";
 
-const Nav = styled.nav`
-  position: fixed;
+const Header = styled.header`
+  width: 100vw;
   background-color: white;
-  width: 100%;
-  height: 79px;
   border-bottom: 2px solid #c9c9c9;
-  padding: 0 20px;
+  position: fixed;
+  height: 79px;
+`;
+
+const Nav = styled.nav`
+  max-width: 978px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   z-index: 30;
 `;
 
-const Navbar = () => {
+const HeaderNav = () => {
   return (
-    <Nav>
-      <Burger />
-    </Nav>
+    <Header>
+      <Nav>
+        <Burger />
+      </Nav>
+    </Header>
   );
 };
 
-export default Navbar;
+export default HeaderNav;
