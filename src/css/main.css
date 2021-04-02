@@ -7,7 +7,7 @@ table {
   height: 580px;
   border-collapse: collapse;
   text-align: center;
-  color: #828282;
+  color: black;
   background-image: url("/src/imgs/rounded-rectangle2x.png");
 }
 table th {
@@ -38,8 +38,10 @@ table .workout-row {
   border-left: 2px solid #828282;
   border-right: 2px solid #828282;
 }
-table tbody tr:first-child td::before {
-  content: "DAY ";
+table span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .vertical {

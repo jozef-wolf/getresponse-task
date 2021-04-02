@@ -55,7 +55,8 @@
       "Carb": "HIGH-CARB"
     },
     {
-      "id": 70
+      "id": 70,
+      "sixAM": "GUILT-FREE DAY"
     }
   ]
 }

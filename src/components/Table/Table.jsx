@@ -1,5 +1,5 @@
 import React from "react";
-// import { ReactComponent as ImportedSVG } from "../imgs/print.svg";
+import Print from "../../imgs/print.svg";
 // import { ReactComponent as Check } from "../imgs/check.svg";
 // import Dumbbell from "../imgs/Dumbbell2x.png";
 import DumbbellGrey from "../../imgs/DumbbellGrey2x.png";
@@ -40,12 +40,17 @@ const Table = ({ meals }) => {
         <tfoot>
           <tr>
             <td>Workout</td>
-            {items.map((_, idx) => (
-              <td className="workout-row" key={idx}>
+            {items.map((_, id) => (
+              <td className="workout-row" key={id}>
                 <img src={DumbbellGrey} alt="" />
               </td>
             ))}
-            <td rowSpan="4">print</td>
+            <td rowSpan="2">
+              <span>
+                <img src={Print} alt="" />
+                <p>Print</p>
+              </span>
+            </td>
           </tr>
         </tfoot>
       </table>

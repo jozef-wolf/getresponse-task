@@ -3,7 +3,7 @@ table {
   height: 580px;
   border-collapse: collapse;
   text-align: center;
-  color: #828282;
+  color: black;
   background-image: url("/src/imgs/rounded-rectangle2x.png");
 
   th {
@@ -34,11 +34,10 @@ table {
     border-left: 2px solid #828282;
     border-right: 2px solid #828282;
   }
-  td {
-  }
-
-  tbody tr:first-child td::before {
-    content: "DAY ";
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
