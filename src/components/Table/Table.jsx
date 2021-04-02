@@ -30,19 +30,22 @@ const Table = ({ meals }) => {
             <tr key={header}>
               <th className="header-column">{header}</th>
               {meals.map((meal) => (
-                <td key={meal.id}>{meal[columnKeys[index]]}</td>
+                <td key={meal.id} className="meals-column">
+                  {meal[columnKeys[index]]}
+                </td>
               ))}
             </tr>
           ))}
         </tbody>
         <tfoot>
           <tr>
-            <td className="workout-row">Workout</td>
+            <td>Workout</td>
             {items.map((_, idx) => (
-              <td key={idx}>
+              <td className="workout-row" key={idx}>
                 <img src={DumbbellGrey} alt="" />
               </td>
             ))}
+            <td rowSpan="4">print</td>
           </tr>
         </tfoot>
       </table>

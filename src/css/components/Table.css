@@ -9,8 +9,10 @@ table {
 table th {
   width: 85px;
 }
-table td {
+table .meals-column {
   width: 126px;
+  border-left: 2px solid #828282;
+  border-bottom: 2px solid #828282;
 }
 table tbody tr:nth-child(n+2):nth-child(-n+6) {
   height: 90px;
@@ -24,15 +26,16 @@ table tbody tr:last-child {
 }
 table .header-column {
   background-color: green;
-  width: 85px !important;
+  border-bottom: 2px solid #828282;
 }
 table .workout-row {
   height: 33px;
   background-color: orange;
+  border-left: 2px solid #828282;
+  border-right: 2px solid #828282;
 }
-table th,
-table td {
-  border: 1px solid black;
+table tbody tr:first-child td::before {
+  content: "DAY ";
 }
 
 /* .vertical {
