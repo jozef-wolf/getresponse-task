@@ -9,7 +9,34 @@ table {
   text-align: center;
   color: #828282;
   background-image: url("/src/imgs/rounded-rectangle2x.png");
-  background-size: cover;
+}
+table th {
+  width: 85px;
+}
+table td {
+  width: 126px;
+}
+table tbody tr:nth-child(n+2):nth-child(-n+6) {
+  height: 90px;
+  background-color: red;
+  font-size: 12.5px;
+  word-wrap: break-word;
+}
+table tbody tr:last-child {
+  background-color: blue;
+  height: 35px;
+}
+table .header-column {
+  background-color: green;
+  width: 85px !important;
+}
+table .workout-row {
+  height: 33px;
+  background-color: orange;
+}
+table th,
+table td {
+  border: 1px solid black;
 }
 
 /* .vertical {

@@ -28,7 +28,7 @@ const Table = ({ meals }) => {
         <tbody>
           {rowHeaders.map((header, index) => (
             <tr key={header}>
-              <th className="table-header">{header}</th>
+              <th className="header-column">{header}</th>
               {meals.map((meal) => (
                 <td key={meal.id}>{meal[columnKeys[index]]}</td>
               ))}
@@ -37,7 +37,7 @@ const Table = ({ meals }) => {
         </tbody>
         <tfoot>
           <tr>
-            <td>Workout</td>
+            <td className="workout-row">Workout</td>
             {items.map((_, idx) => (
               <td key={idx}>
                 <img src={DumbbellGrey} alt="" />
