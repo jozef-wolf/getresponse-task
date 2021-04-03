@@ -88,14 +88,14 @@ const Table = ({ meals }) => {
             <tr key={header}>
               <th className="header__column">{header}</th>
               {index !== rowHeaders.length - 1 ? (
-                meals.slice(0).map((meal) => (
+                meals.slice(0, 7).map((meal) => (
                   <td key={meal.id} className="meals__column">
                     {meal[columnKeys[index]]}
                   </td>
                 ))
               ) : (
                 <>
-                  {meals.slice(0, -1).map((meal) => (
+                  {meals.slice(0, 6).map((meal) => (
                     <td key={meal.id} className="meals__column">
                       {meal[columnKeys[index]]}
                     </td>

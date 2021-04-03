@@ -11,11 +11,11 @@ const StyledSection = styled.div`
   margin-top: 116px;
 `;
 
-const Section = ({ meals }) => {
+const Section = ({ meals, current, setCurrent }) => {
   return (
     <StyledSection>
       <ProgressBar />
-      <Week />
+      <Week current={current} setCurrent={setCurrent} />
       <Selections />
     </StyledSection>
   );

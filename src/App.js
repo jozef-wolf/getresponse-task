@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Navbar from "./components/Navbar/Navbar";
 
+
 const StyledApp = styled.div`
   display: flex;
   align-items: center;
@@ -19,7 +20,7 @@ const StyledContainer = styled.div`
 
 function App() {
   const [meals, setMeals] = useState(null);
-
+  const [current, setCurrent] = useState(0);
   useEffect(() => {
     fetch("http://localhost:3000/meals")
       .then((res) => {
@@ -34,7 +35,7 @@ function App() {
     <StyledApp className="App">
       <Navbar />
       <StyledContainer>
-        <Section />
+        <Section current={current} setCurrent={setCurrent} />
         {/* Conditional templating in react */}
         {meals && <Table meals={meals} />}
         <Aside />

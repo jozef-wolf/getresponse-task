@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import ArrowRight from "../imgs/arrow.svg";
 import ArrowLeft from "../imgs/arrowL.svg";
@@ -43,9 +43,9 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Week = () => {
+const Week = ({ current, setCurrent }) => {
   const weeks = ["WEEK 1", "WEEK 2", "WEEK 3", "WEEK 4"];
-  const [current, setCurrent] = useState(0);
+
   const length = weeks.length;
 
   const nextWeek = () => {
