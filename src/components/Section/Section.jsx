@@ -4,8 +4,12 @@ import ProgressBar from "./ProgressBar";
 import Week from "./Week";
 import Selections from "./Selections";
 
-
-const StyledSection = styled.div``;
+const StyledSection = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 116px;
+`;
 
 const Section = () => {
   return (
