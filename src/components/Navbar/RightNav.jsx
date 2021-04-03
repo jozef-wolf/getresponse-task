@@ -8,6 +8,7 @@ const Ul = styled.ul`
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
+
   li {
     padding: 20px 10px;
   }

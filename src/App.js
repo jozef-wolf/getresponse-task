@@ -3,7 +3,18 @@ import Table from "./components/Table/Table";
 import Aside from "./components/aside/Aside";
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import Navbar from "./components/Navbar/Navbar";
+
+const StyledApp = styled.div`
+  max-height: 768px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 
 function App() {
   const [meals, setMeals] = useState(null);
@@ -19,13 +30,13 @@ function App() {
       });
   }, []);
   return (
-    <div className="App">
+    <StyledApp className="App">
       <Navbar />
       <Section />
       {/* Conditional templating in react */}
       {meals && <Table meals={meals} />}
       <Aside />
-    </div>
+    </StyledApp>
   );
 }
 
