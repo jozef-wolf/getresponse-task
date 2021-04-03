@@ -22,6 +22,7 @@ const StyledDiv = styled.div`
   .box {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 249px;
     &__week {
       width: 160px;
@@ -29,8 +30,16 @@ const StyledDiv = styled.div`
       font-size: 47px;
       color: #ff801a;
       line-height: 1;
-      text-align: center;xx
+      text-align: center;
     }
+  }
+  .week {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  .week.active {
+    opacity: 1;
+    transition-duration: 1s;
   }
 `;
 
@@ -58,7 +67,7 @@ const Week = () => {
       <div className="box">
         {weeks.map((week, index) => (
           <div
-            className={index === current ? "slide active" : "slide"}
+            className={index === current ? "week active" : "week"}
             key={index}
           >
             {index === current && <div className="box__week">{week}</div>}
