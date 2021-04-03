@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Arrow from "../imgs/arrow.svg";
 import ArrowL from "../imgs/arrowL.svg";
+
 const StyledDiv = styled.div`
   display: flex;
   justify-content: center;
@@ -22,19 +23,30 @@ const StyledDiv = styled.div`
     color: #ff801a;
     line-height: 1;
   }
+  .box {
+    display: flex;
+    flex-direction: row;
+    &__week {
+      flex-direction: row;
+    }
+  }
 `;
 
 const Week = () => {
   const weeks = ["WEEK 1", "WEEK 2", "WEEK 3", "WEEK 4"];
+  const [current, setCurrent] = useState(0);
+  const lenght = weeks.length
 
+
+  
   return (
     <StyledDiv>
       <button>
         <img src={ArrowL} alt="" />
       </button>
-      <div>
-        {weeks.map((week) => (
-          <div>{week}</div>
+      <div className="box">
+        {weeks.map((week, index) => (
+          <div className="box__week">{week}</div>
         ))}
       </div>
       <button>
