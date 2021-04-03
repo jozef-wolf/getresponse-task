@@ -10,9 +10,13 @@ const StyledAside = styled.aside`
   align-items: center;
   justify-content: center;
   margin-top: 45px;
-  /* flex-wrap: wrap; */
-  max-width: 978px;
+
+  width: 978px;
   height: 190px;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
   .box__first {
     border-right: 1px solid #828282;
     h2 {

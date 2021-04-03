@@ -8,7 +8,8 @@ const Ul = styled.ul`
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
-
+  border-left: 1px solid #c9c9c9;
+  margin-left: 32px;
   li {
     padding: 20px 10px;
   }

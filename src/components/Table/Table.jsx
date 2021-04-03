@@ -16,7 +16,6 @@ const StyleTable = styled.table`
     text-align: center;
     color: black;
     background-image: url(${RoundedRectangle});
-    
 
     th {
       width: 85px;

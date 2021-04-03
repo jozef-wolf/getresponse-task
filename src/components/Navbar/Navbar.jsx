@@ -3,24 +3,26 @@ import styled from "styled-components";
 import Burger from "./Hamburger";
 
 const Header = styled.header`
-  width: 100%;
   background-color: white;
   border-bottom: 2px solid #c9c9c9;
   position: fixed;
   height: 79px;
   display: flex;
   justify-content: center;
+  width: 100vw;
 `;
 
 const Nav = styled.nav`
-  width: 978px;
+  width: 860px;
   height: 100%;
-  border-left: 1px solid #c9c9c9;
   margin-left: 118px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 30;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const HeaderNav = () => {

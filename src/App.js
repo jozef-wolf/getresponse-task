@@ -7,13 +7,14 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar/Navbar";
 
 const StyledApp = styled.div`
-  max-height: 768px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
+`;
+
+const StyledContainer = styled.div`
+  width: 987px;
 `;
 
 function App() {
@@ -32,10 +33,12 @@ function App() {
   return (
     <StyledApp className="App">
       <Navbar />
-      <Section />
-      {/* Conditional templating in react */}
-      {meals && <Table meals={meals} />}
-      <Aside />
+      <StyledContainer>
+        <Section />
+        {/* Conditional templating in react */}
+        {meals && <Table meals={meals} />}
+        <Aside />
+      </StyledContainer>
     </StyledApp>
   );
 }
