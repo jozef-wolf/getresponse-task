@@ -1,33 +1,35 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Arrow from "../imgs/arrow.svg";
-import ArrowL from "../imgs/arrowL.svg";
+import ArrowRight from "../imgs/arrow.svg";
+import ArrowLeft from "../imgs/arrowL.svg";
 
 const StyledDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 279px;
+  position: relative;
   button {
     width: 24px;
     height: 42px;
     display: flex;
     align-items: center;
+    cursor: pointer;
     img {
     }
   }
-  div {
-    text-align: center;
-    width: 249px;
-    font-size: 47px;
-    color: #ff801a;
-    line-height: 1;
-  }
+
   .box {
     display: flex;
     flex-direction: row;
+    width: 249px;
     &__week {
-      flex-direction: row;
+      width: 160px;
+      height: 36px;
+      font-size: 47px;
+      color: #ff801a;
+      line-height: 1;
+      text-align: center;xx
     }
   }
 `;
@@ -35,25 +37,27 @@ const StyledDiv = styled.div`
 const Week = () => {
   const weeks = ["WEEK 1", "WEEK 2", "WEEK 3", "WEEK 4"];
   const [current, setCurrent] = useState(0);
-  const lenght = weeks.length
+  const lenght = weeks.length;
 
+  if (!Array.isArray(weeks) | (weeks.lenght <= 0)) return null;
 
-  
   return (
     <StyledDiv>
-      <button>
-        <img src={ArrowL} alt="" />
+      <button className="left-arrow">
+        <img src={ArrowLeft} alt="" />
       </button>
       <div className="box">
         {weeks.map((week, index) => (
           <div className="box__week">{week}</div>
         ))}
       </div>
-      <button>
-        <img src={Arrow} alt="" />
+      <button className="right-arrow">
+        <img src={ArrowRight} alt="" />
       </button>
     </StyledDiv>
   );
 };
 
 export default Week;
+//  onClick = { prevWeek };
+//  onClick = { nextWeek };
