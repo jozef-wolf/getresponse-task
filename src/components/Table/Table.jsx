@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Print from "../imgs/print.svg";
-// import { ReactComponent as Check } from "../imgs/check.svg";
+// import Check from "../imgs/check.svg";
 // import Dumbbell from "../imgs/Dumbbell2x.png";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 // import Rectangle from "../imgs/rectangle2x.png";
@@ -21,16 +21,15 @@ const StyleTable = styled.table`
     th {
       width: 85px;
     }
-    .meals-column {
+    .meals__column {
       width: 126px;
       border-left: 2px solid #828282;
       border-bottom: 2px solid #828282;
-      
+      border-left: 2px solid #828282;
      
     }
     tbody tr:nth-child(n + 2):nth-child(-n + 6) {
       height: 90px;
-      background-color: red;
       font-size: 12.5px;
       word-wrap: break-word;
     }
@@ -38,26 +37,30 @@ const StyleTable = styled.table`
     height: 50px;
     }
     tbody tr:last-child {
-      background-color: blue;
+      
       height: 35px;
     }
-    .header-column {
-      background-color: green;
+    .header__column {
+      
       border-bottom: 2px solid #828282;
     }
     tbody tr:nth-child(7){
     height: 35px;
     }
-    .workout-row {
+    .carb__row{border-left: 2px solid #828282;}
+
+    .workout__row {
       height: 33px;
-      background-color: orange;
       border-left: 2px solid #828282;
       border-right: 2px solid #828282;
+      
     }
+    
     span {
       display: flex;
       justify-content: center;
       align-items: center;
+      
     }
   }
 `;
@@ -84,21 +87,21 @@ const Table = ({ meals }) => {
         <tbody>
           {rowHeaders.map((header, index) => (
             <tr key={header}>
-              <th className="header-column">{header}</th>
+              <th className="header__column">{header}</th>
               {index !== rowHeaders.length - 1 ? (
                 meals.slice(0).map((meal) => (
-                  <td key={meal.id} className="meals-column">
+                  <td key={meal.id} className="meals__column">
                     {meal[columnKeys[index]]}
                   </td>
                 ))
               ) : (
                 <>
                   {meals.slice(0, -1).map((meal) => (
-                    <td key={meal.id} className="meals-column">
+                    <td key={meal.id} className="meals__column">
                       {meal[columnKeys[index]]}
                     </td>
                   ))}
-                  <td rowSpan={2}>
+                  <td className="carb__row" rowSpan={2}>
                     <span>
                       <img src={Print} alt="" />
                       <p>Print</p>
@@ -111,7 +114,7 @@ const Table = ({ meals }) => {
           <tr>
             <td>Workout</td>
             {items.map((_, id) => (
-              <td className="workout-row" key={id}>
+              <td className="workout__row" key={id}>
                 <img src={DumbbellGrey} alt="" />
               </td>
             ))}
