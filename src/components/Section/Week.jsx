@@ -42,6 +42,9 @@ const Week = () => {
   const nextWeek = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
+  const prevWeek = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
   console.log(current);
   if (!Array.isArray(weeks) || weeks.length <= 0) {
     return null;
@@ -49,13 +52,16 @@ const Week = () => {
 
   return (
     <StyledDiv>
-      <button className="left-arrow">
+      <button className="left-arrow" onClick={prevWeek}>
         <img src={ArrowLeft} alt="" />
       </button>
       <div className="box">
         {weeks.map((week, index) => (
-          <div key={week} className="box__week">
-            {week}
+          <div
+            className={index === current ? "slide active" : "slide"}
+            key={index}
+          >
+            {index === current && <div className="box__week">{week}</div>}
           </div>
         ))}
       </div>
