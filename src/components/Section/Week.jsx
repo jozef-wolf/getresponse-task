@@ -25,12 +25,18 @@ const StyledDiv = styled.div`
 `;
 
 const Week = () => {
+  const weeks = ["WEEK 1", "WEEK 2", "WEEK 3", "WEEK 4"];
+
   return (
     <StyledDiv>
       <button>
         <img src={ArrowL} alt="" />
       </button>
-      <div>WEEK</div>
+      <div>
+        {weeks.map((week) => (
+          <div>{week}</div>
+        ))}
+      </div>
       <button>
         <img src={Arrow} alt="" />
       </button>

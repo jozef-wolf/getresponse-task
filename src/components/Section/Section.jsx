@@ -11,7 +11,7 @@ const StyledSection = styled.div`
   margin-top: 116px;
 `;
 
-const Section = () => {
+const Section = ({ meals }) => {
   return (
     <StyledSection>
       <ProgressBar />
