@@ -37,9 +37,15 @@ const StyledDiv = styled.div`
 const Week = () => {
   const weeks = ["WEEK 1", "WEEK 2", "WEEK 3", "WEEK 4"];
   const [current, setCurrent] = useState(0);
-  const lenght = weeks.length;
+  const length = weeks.length;
 
-  if (!Array.isArray(weeks) | (weeks.lenght <= 0)) return null;
+  const nextWeek = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+  console.log(current);
+  if (!Array.isArray(weeks) || weeks.length <= 0) {
+    return null;
+  }
 
   return (
     <StyledDiv>
@@ -48,10 +54,12 @@ const Week = () => {
       </button>
       <div className="box">
         {weeks.map((week, index) => (
-          <div className="box__week">{week}</div>
+          <div key={week} className="box__week">
+            {week}
+          </div>
         ))}
       </div>
-      <button className="right-arrow">
+      <button className="right-arrow" onClick={nextWeek}>
         <img src={ArrowRight} alt="" />
       </button>
     </StyledDiv>
