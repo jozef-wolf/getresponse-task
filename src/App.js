@@ -3,7 +3,6 @@ import Table from "./components/Table/Table";
 import Aside from "./components/aside/Aside";
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import "./css/main.css";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {

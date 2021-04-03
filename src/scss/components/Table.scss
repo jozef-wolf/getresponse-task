@@ -1,45 +1,4 @@
-table {
-  width: 978px;
-  height: 580px;
-  border-collapse: collapse;
-  text-align: center;
-  color: black;
-  background-image: url("/src/imgs/rounded-rectangle2x.png");
 
-  th {
-    width: 85px;
-  }
-  .meals-column {
-    width: 126px;
-    border-left: 2px solid #828282;
-    border-bottom: 2px solid #828282;
-  }
-  tbody tr:nth-child(n + 2):nth-child(-n + 6) {
-    height: 90px;
-    background-color: red;
-    font-size: 12.5px;
-    word-wrap: break-word;
-  }
-  tbody tr:last-child {
-    background-color: blue;
-    height: 35px;
-  }
-  .header-column {
-    background-color: green;
-    border-bottom: 2px solid #828282;
-  }
-  .workout-row {
-    height: 33px;
-    background-color: orange;
-    border-left: 2px solid #828282;
-    border-right: 2px solid #828282;
-  }
-  span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 /* .vertical {
   font-family: HelveticaNeueLTStd-Lt;
