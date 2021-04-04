@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ProgressBar from "./ProgressBar";
+
 import Week from "./Week";
 import Selections from "./Selections";
 
@@ -11,10 +11,9 @@ const StyledSection = styled.div`
   margin-top: 116px;
 `;
 
-const Section = ({ meals, current, setCurrent }) => {
+const Section = ({ current, setCurrent }) => {
   return (
     <StyledSection>
-      <ProgressBar />
       <Week current={current} setCurrent={setCurrent} />
       <Selections />
     </StyledSection>

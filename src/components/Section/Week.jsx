@@ -3,7 +3,78 @@ import styled from "styled-components";
 import ArrowRight from "../imgs/arrow.svg";
 import ArrowLeft from "../imgs/arrowL.svg";
 
-const StyledDiv = styled.div`
+const StyledBar = styled.div`
+  .progress-dots {
+    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 2em;
+    height: 2.5em;
+  }
+
+  .progress-dots-bar {
+    background-color: #444;
+    max-width: 495px;
+    text-align: left;
+    display: block;
+    height: 4px;
+    margin-top: -21px;
+    margin-left: 3px;
+  }
+
+  .progress-dot {
+    font-family: "Arial", sans-serif;
+    display: block;
+    background: #444;
+    border: 1px solid #444;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    text-align: center;
+    color: transparent;
+    font-size: 2em;
+    padding: 0.2em;
+    position: relative;
+    @media all and (min-width: 400px) {
+      width: 1em;
+      height: 1em;
+      font-size: 1em;
+      color: #444;
+    }
+    &--last {
+      width: 1em;
+      height: 1em;
+      color: #ffffff;
+      font-size: 1.8em;
+    }
+    &--current {
+      background-color: #ffffff;
+      color: #444444;
+      width: 1em;
+      height: 1em;
+      @media all and (min-width: 400px) {
+        font-size: 2em;
+        display: block;
+      }
+    }
+    &__number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -0.6em;
+      margin-left: -0.25em;
+    }
+  }
+`;
+
+const StyledWeek = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,24 +132,56 @@ const Week = ({ current, setCurrent }) => {
   }
 
   return (
-    <StyledDiv>
-      <button className="left-arrow" onClick={prevWeek}>
-        <img src={ArrowLeft} alt="" />
-      </button>
-      <div className="box">
-        {weeks.map((week, index) => (
-          <div
-            className={index === current ? "week active" : "week"}
-            key={index}
-          >
-            {index === current && <div className="box__week">{week}</div>}
+    <>
+      <StyledBar className="progress-container">
+        <p>Your 12 week progress</p>
+        <div className="progress-dots" aria-hidden="true">
+          <div className="progress-dot progress-dot--first">
+            <span className="progress-dot__number">1</span>
           </div>
-        ))}
-      </div>
-      <button className="right-arrow" onClick={nextWeek}>
-        <img src={ArrowRight} alt="" />
-      </button>
-    </StyledDiv>
+          <div className="progress-dot">
+            <span className="progress-dot__number">2</span>
+          </div>
+          <div className="progress-dot">
+            <span className="progress-dot__number">3</span>
+          </div>
+          <div className="progress-dot">
+            <span className="progress-dot__number">4</span>
+          </div>
+          <div className="progress-dot">
+            <span className="progress-dot__number">5</span>
+          </div>
+          <div className="progress-dot">
+            <span className="progress-dot__number">6</span>
+          </div>
+          <div className="progress-dot">
+            <span className="progress-dot__number">7</span>
+          </div>
+          <div className="progress-dot progress-dot--last">
+            <span className="progress-dot__number">8</span>
+          </div>
+        </div>
+        <div className="progress-dots-bar" aria-hidden="true"></div>
+      </StyledBar>
+      <StyledWeek>
+        <button className="left-arrow" onClick={prevWeek}>
+          <img src={ArrowLeft} alt="" />
+        </button>
+        <div className="box">
+          {weeks.map((week, index) => (
+            <div
+              className={index === current ? "week active" : "week"}
+              key={index}
+            >
+              {index === current && <div className="box__week">{week}</div>}
+            </div>
+          ))}
+        </div>
+        <button className="right-arrow" onClick={nextWeek}>
+          <img src={ArrowRight} alt="" />
+        </button>
+      </StyledWeek>
+    </>
   );
 };
 
