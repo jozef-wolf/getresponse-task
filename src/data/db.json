@@ -56,7 +56,7 @@
     },
     {
       "id": 7,
-      "sixAM": "GUILT-FREE DAY"
+      "sixAM": false
     },
     {
       "id": 8,
@@ -114,12 +114,7 @@
     },
     {
       "id": 14,
-      "sixAM": "Bod•ē Shake",
-      "nineAM": "Ham and Swiss Roll Ups",
-      "twelveAM": "Turkey Melt",
-      "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
-      "sixPM": "Turkey Melt",
-      "Carb": "LOW-CARB"
+      "sixAM": false
     },
     {
       "id": 15,
@@ -133,20 +128,20 @@
     {
       "id": 16,
       "sixAM": "Bod•ē Shake",
-      "nineAM": "Grilled Steak (HC)",
-      "twelveAM": "Bod•ē Shake",
-      "threePM": "Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray",
-      "sixPM": "Garlic Lime Chicken (HC)",
-      "Carb": "HIGH-CARB"
-    },
-    {
-      "id": 17,
-      "sixAM": "Bod•ē Shake",
       "nineAM": "Ham and Swiss Roll Ups",
       "twelveAM": "Turkey Melt",
       "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
       "sixPM": "Turkey Melt",
       "Carb": "LOW-CARB"
+    },
+    {
+      "id": 17,
+      "sixAM": "Bod•ē Shake",
+      "nineAM": "Grilled Steak (HC)",
+      "twelveAM": "Bod•ē Shake",
+      "threePM": "Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray",
+      "sixPM": "Garlic Lime Chicken (HC)",
+      "Carb": "HIGH-CARB"
     },
     {
       "id": 18,
@@ -164,7 +159,7 @@
       "twelveAM": "Turkey Melt",
       "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
       "sixPM": "Turkey Melt",
-      "Carb": "HIGH-CARB"
+      "Carb": "LOW-CARB"
     },
     {
       "id": 20,
@@ -173,25 +168,20 @@
       "twelveAM": "Turkey Melt",
       "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
       "sixPM": "Turkey Melt",
-      "Carb": "LOW-CARB"
+      "Carb": "HIGH-CARB"
     },
     {
       "id": 21,
+      "sixAM": false
+    },
+    {
+      "id": 22,
       "sixAM": "Bod•ē Shake",
       "nineAM": "Ham and Swiss Roll Ups",
       "twelveAM": "Turkey Melt",
       "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
       "sixPM": "Turkey Melt",
       "Carb": "LOW-CARB"
-    },
-    {
-      "id": 2,
-      "sixAM": "Bod•ē Shake",
-      "nineAM": "Grilled Steak (HC)",
-      "twelveAM": "Bod•ē Shake",
-      "threePM": "Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray",
-      "sixPM": "Garlic Lime Chicken (HC)",
-      "Carb": "HIGH-CARB"
     },
     {
       "id": 23,
@@ -201,6 +191,15 @@
       "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
       "sixPM": "Turkey Melt",
       "Carb": "LOW-CARB"
+    },
+    {
+      "id": 23,
+      "sixAM": "Bod•ē Shake",
+      "nineAM": "Grilled Steak (HC)",
+      "twelveAM": "Bod•ē Shake",
+      "threePM": "Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray",
+      "sixPM": "Garlic Lime Chicken (HC)",
+      "Carb": "HIGH-CARB"
     },
     {
       "id": 24,
@@ -218,7 +217,7 @@
       "twelveAM": "Turkey Melt",
       "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
       "sixPM": "Turkey Melt",
-      "Carb": "HIGH-CARB"
+      "Carb": "LOW-CARB"
     },
     {
       "id": 26,
@@ -227,25 +226,11 @@
       "twelveAM": "Turkey Melt",
       "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
       "sixPM": "Turkey Melt",
-      "Carb": "LOW-CARB"
+      "Carb": "HIGH-CARB"
     },
     {
       "id": 27,
-      "sixAM": "Bod•ē Shake",
-      "nineAM": "Ham and Swiss Roll Ups",
-      "twelveAM": "Turkey Melt",
-      "threePM": "Bod•ē Burn with Mozzarella and Tomato Slices",
-      "sixPM": "Turkey Melt",
-      "Carb": "LOW-CARB"
-    },
-    {
-      "id": 28,
-      "sixAM": "Bod•ē Shake",
-      "nineAM": "Grilled Steak (HC)",
-      "twelveAM": "Bod•ē Shake",
-      "threePM": "Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray",
-      "sixPM": "Garlic Lime Chicken (HC)",
-      "Carb": "HIGH-CARB"
+      "sixAM": false
     }
   ]
 }

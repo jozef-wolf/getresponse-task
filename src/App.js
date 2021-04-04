@@ -1,11 +1,8 @@
-import Section from "./components/Section/Section";
-import Table from "./components/Table/Table";
-import Aside from "./components/aside/Aside";
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Navbar from "./components/Navbar/Navbar";
-
+import TableContainer from "./components/TableContainer";
 
 const StyledApp = styled.div`
   display: flex;
@@ -14,32 +11,11 @@ const StyledApp = styled.div`
   height: 100vh;
 `;
 
-const StyledContainer = styled.div`
-  width: 987px;
-`;
-
 function App() {
-  const [meals, setMeals] = useState(null);
-  const [current, setCurrent] = useState(0);
-  useEffect(() => {
-    fetch("http://localhost:3000/meals")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setMeals(data);
-      });
-  }, []);
   return (
     <StyledApp className="App">
       <Navbar />
-      <StyledContainer>
-        <Section current={current} setCurrent={setCurrent} />
-        {/* Conditional templating in react */}
-        {meals && <Table meals={meals} />}
-        <Aside />
-      </StyledContainer>
+      <TableContainer />
     </StyledApp>
   );
 }
