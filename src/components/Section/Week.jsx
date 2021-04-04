@@ -54,7 +54,7 @@ const Week = ({ current, setCurrent }) => {
   const prevWeek = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-  
+
   console.log(current);
   if (!Array.isArray(weeks) || weeks.length <= 0) {
     return null;
@@ -62,12 +62,7 @@ const Week = ({ current, setCurrent }) => {
 
   return (
     <StyledDiv>
-      <button
-        className="left-arrow"
-        onClick={() => {
-          prevWeek();
-        }}
-      >
+      <button className="left-arrow" onClick={prevWeek}>
         <img src={ArrowLeft} alt="" />
       </button>
       <div className="box">
