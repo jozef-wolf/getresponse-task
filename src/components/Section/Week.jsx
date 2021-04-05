@@ -31,18 +31,6 @@ const StyledDiv = styled.div`
     z-index: 10 !important;
   }
 
-  .progress-link {
-    background-color: #c2c5cc;
-    display: inline-block;
-    width: 39px;
-    height: 6px;
-    position: relative;
-    top: -7px;
-    margin-left: -7px;
-    margin-right: -7px;
-    z-index: 0;
-  }
-
   .progress-dot.active,
   .progress-link.active {
     background-color: #adbb0c;
@@ -58,12 +46,21 @@ const StyledWeek = styled.div`
   align-items: center;
   width: 279px;
   position: relative;
+  button:hover {
+    left: 5px;
+    background-color: #adbb0c;
+    transition: ease-in 0.5s;
+  }
   button {
     width: 24px;
     height: 42px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    background-color: transparent;
+    border: solid 1px #c0c0c0;
+    border-radius: 5px;
+    outline: none;
     img {
     }
   }
