@@ -76,6 +76,14 @@ const Table = ({ meals }) => {
   ];
   const columnKeys = Object.keys(meals[0]);
 
+  const freeDay = meals.map(function (meal) {
+    if (meal.sixAM === false) {
+      meal.sixAM = "GUILT-FREE DAY";
+    }
+
+    return meal;
+  });
+
   return (
     <>
       <StyleTable>
