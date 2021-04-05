@@ -24,11 +24,6 @@ const TableContainer = () => {
 
   return (
     <StyledContainer>
-      <Section current={current} setCurrent={setCurrent} />
-      {/* Conditional templating in react */}
-      {meals && (
-        <Table meals={meals}/>
-      )}
       <Aside />
     </StyledContainer>
   );

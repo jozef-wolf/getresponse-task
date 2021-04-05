@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
-
 import { AiOutlineUser } from "react-icons/ai";
+
+const user = [
+  {
+    name: "Josef Wolf",
+  },
+];
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -31,11 +37,12 @@ const Ul = styled.ul`
 `;
 
 const UserUl = styled.ul`
-  display: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-around;
-    list-style: none;
   }
 `;
 
@@ -52,7 +59,7 @@ const RightNav = ({ open }) => {
           <AiOutlineUser />
         </li>
         <li>
-          Olivia Wild
+          {user[0].name}
           <BiChevronDown />
         </li>
       </UserUl>
