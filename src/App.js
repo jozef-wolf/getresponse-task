@@ -8,7 +8,6 @@ const StyledApp = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100vw;
 `;
 
 function App() {

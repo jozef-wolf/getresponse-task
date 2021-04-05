@@ -25,6 +25,7 @@ const Nav = styled.nav`
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100vw;
+    margin-left: 0;
   }
 `;
 

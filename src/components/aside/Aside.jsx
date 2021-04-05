@@ -13,7 +13,7 @@ const StyledAside = styled.aside`
   height: 190px;
   flex-wrap: wrap;
   @media (max-width: 768px) {
-    height: 100vh;
+    height: 100%;
   }
   .box__first {
     border-right: 1px solid #828282;

@@ -4,7 +4,9 @@ import ArrowRight from "../imgs/arrow.svg";
 import ArrowLeft from "../imgs/arrowL.svg";
 
 const StyledDiv = styled.div`
-  
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
   p {
     text-align: center;
     font-size: 9.5px;
@@ -43,6 +45,9 @@ const StyledDiv = styled.div`
 `;
 
 const StyledWeek = styled.div`
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
   display: flex;
   justify-content: center;
   align-items: center;

@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 987px;
-  height: 100%;
+  height: 100vh;
   @media (max-width: 768px) {
     width: 100vw;
   }
@@ -32,7 +32,7 @@ const ContainerTable = () => {
     <StyledContainer>
       <Section current={current} setCurrent={setCurrent} />
       {/* Conditional templating in react */}
-      {/* {meals && <Table meals={meals} />} */}
+      {meals && <Table meals={meals} />}
       <Aside />
     </StyledContainer>
   );
