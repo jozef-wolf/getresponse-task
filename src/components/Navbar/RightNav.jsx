@@ -16,6 +16,7 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   border-left: 1px solid #c9c9c9;
   margin-left: 32px;
+  font-size: 12.5px;
   li {
     padding: 20px 10px;
   }
@@ -40,6 +41,7 @@ const UserUl = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: row;
+  font-size: 15.5px;
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-around;

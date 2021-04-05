@@ -10,7 +10,7 @@ const StyledContainer = styled.div`
   width: 987px;
 `;
 
-const TableContainer = () => {
+const ContainerTable = () => {
   const [meals, setMeals] = useState(null);
   const [current, setCurrent] = useState(0);
   useEffect(() => {
@@ -34,4 +34,4 @@ const TableContainer = () => {
   );
 };
 
-export default TableContainer;
+export default ContainerTable;

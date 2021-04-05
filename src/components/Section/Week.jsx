@@ -4,6 +4,9 @@ import ArrowRight from "../imgs/arrow.svg";
 import ArrowLeft from "../imgs/arrowL.svg";
 
 const StyledDiv = styled.div`
+  p {
+    font-size: 9.5px;
+  }
   .progress-dot {
     position: relative;
     display: inline-block;

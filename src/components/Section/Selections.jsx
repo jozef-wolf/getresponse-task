@@ -10,6 +10,9 @@ import {
 
 const StyledDiv = styled.div`
   width: 300px;
+  p {
+    font-size: 9.5px;
+  }
   div {
     font-size: 30px;
     color: #828282;

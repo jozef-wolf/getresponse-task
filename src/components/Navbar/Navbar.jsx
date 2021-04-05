@@ -9,7 +9,7 @@ const Header = styled.header`
   height: 79px;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   z-index: 20;
 `;
 
@@ -18,14 +18,13 @@ const Nav = styled.nav`
   height: 100%;
   margin-left: 118px;
   display: flex;
-
   align-items: center;
   justify-content: space-between;
   z-index: 30;
   @media (max-width: 768px) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
   }
 `;
 
