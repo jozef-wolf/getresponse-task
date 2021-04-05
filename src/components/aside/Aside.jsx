@@ -8,112 +8,66 @@ const StyledAside = styled.aside`
   display: flex;
   flex-direction: row;
   margin-top: 45px;
-  height: 190px;
-  flex-wrap: wrap;
-  @media (max-width: 768px) {
-    height: 100%;
+  h2 {
+    font-size: 28.5px;
+    height: 55px;
   }
-  .box__first {
-    border-right: 1px solid #828282;
-    @media (max-width: 768px) {
-      border-right: 0;
-      border-bottom: 2px solid #828282;
+  > p {
+    font-family: Arial;
+    font-size: 12.5px;
+    width: 237px;
+    height: 35px;
+  }
+  span:hover{
+    cursor: pointer;
+  }
+  span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    border: solid 1px #b8b8b8;
+    img:first-child{
+      width: 16px;
+      height: 19px;
     }
-    h2 {
-      width: 183px;
-      height: 55px;
-    }
-    span {
+  
+  }
+  .arrow{
+    width: 7px;
+  height: 13px;
+  }
+  .box__first > span{
       width: 106px;
       height: 33px;
-    }
   }
-  .box__second {
-    border-right: 1px solid #828282;
-    @media (max-width: 768px) {
-      border-right: 0;
-      border-bottom: 2px solid #828282;
+  .box__second{
+    height: 190px;
+    text-align: left;
+    width: 366px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 48px;
+    span:first-child{
+    width: 95px;
+    height: 33px;
     }
-    > p {
-      width: 237px;
-      height: 35px;
-      /* margin: 20px 23px 20px 48px; */
-    }
-
-    span:first-child {
-      width: 95px;
-      height: 33px;
-      img:first-child {
-        width: 16px;
-        height: 19px;
-      }
-    }
-    span:last-child {
+    span:last-child{
       width: 125px;
       height: 33px;
-      img:first-child {
-        width: 18px;
-        height: 22px;
-      }
     }
   }
-  .box__third {
-    h2 {
-      width: 218px;
-      height: 51px;
-    }
-    p {
-      /* margin: 20px 2px 20px 38px; */
-    }
-    span {
+  .box__third{
+    padding-left: 39px;
+    span{
       width: 126px;
       height: 33px;
     }
   }
-  .box__second {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 190px;
-    width: 366px;
-  }
   .box__first,
-  .box__third {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  .box___third {
     height: 190px;
-    width: 305px;
-    div {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    h2 {
-      font-size: 28.5px;
-      letter-spacing: -0.86px;
-      text-align: left;
-      color: #828282;
-    }
-    p {
-      font-family: Arial;
-      font-size: 15.5px;
-      text-align: left;
-      color: #828282;
-    }
-    span {
-      height: 33px;
-      border-radius: 5px;
-      border: solid 1px #b8b8b8;
-      background-color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      .arrow {
-        width: 7px;
-        height: 13px;
-      }
+    text-align: left;
     }
   }
 `;
@@ -158,7 +112,7 @@ const Aside = () => {
           aliquet.
         </p>
         <span>
-          <p>FAQs</p>
+          <p>Read FAQs</p>
           <img className="arrow" src={Arrow} alt="" />
         </span>
       </div>
