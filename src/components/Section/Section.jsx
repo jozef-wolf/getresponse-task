@@ -6,10 +6,13 @@ import Selections from "./Selections";
 
 const StyledSection = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 116px;
-  flex-wrap: wrap;
+  padding-bottom: 33px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Section = ({ current, setCurrent }) => {

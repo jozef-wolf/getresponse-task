@@ -10,15 +10,17 @@ const StyledAside = styled.aside`
   align-items: center;
   justify-content: center;
   margin-top: 45px;
-  width: 978px;
   height: 190px;
+  flex-wrap: wrap;
   @media (max-width: 768px) {
-    flex-direction: column;
-    justify-content: center;
+    height: 100vh;
   }
-
   .box__first {
     border-right: 1px solid #828282;
+    @media (max-width: 768px) {
+      border-right: 0;
+      border-bottom: 2px solid #828282;
+    }
     h2 {
       width: 183px;
       height: 55px;
@@ -30,10 +32,14 @@ const StyledAside = styled.aside`
   }
   .box__second {
     border-right: 1px solid #828282;
+    @media (max-width: 768px) {
+      border-right: 0;
+      border-bottom: 2px solid #828282;
+    }
     > p {
       width: 237px;
       height: 35px;
-      margin: 20px 23px 20px 48px;
+      /* margin: 20px 23px 20px 48px; */
     }
 
     span:first-child {
@@ -59,7 +65,7 @@ const StyledAside = styled.aside`
       height: 51px;
     }
     p {
-      margin: 20px 2px 20px 38px;
+      /* margin: 20px 2px 20px 38px; */
     }
     span {
       width: 126px;
@@ -90,12 +96,8 @@ const StyledAside = styled.aside`
     p {
       font-family: Arial;
       font-size: 15.5px;
-      /* line-height: 1.42;
-      letter-spacing: -0.47px; */
       text-align: left;
       color: #828282;
-      /* width: 237px;
-      height: 35px; */
     }
     span {
       height: 33px;

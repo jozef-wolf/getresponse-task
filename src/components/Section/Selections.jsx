@@ -9,7 +9,6 @@ import {
 } from "react-icons/gi";
 
 const StyledDiv = styled.div`
-  width: 300px;
   p {
     font-size: 9.5px;
   }

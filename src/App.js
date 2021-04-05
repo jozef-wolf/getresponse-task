@@ -5,9 +5,10 @@ import ContainerTable from "./components/TableContainer";
 
 const StyledApp = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
-  height: 100vh;
   width: 100%;
+  height: 100vw;
 `;
 
 function App() {

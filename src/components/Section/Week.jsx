@@ -4,8 +4,14 @@ import ArrowRight from "../imgs/arrow.svg";
 import ArrowLeft from "../imgs/arrowL.svg";
 
 const StyledDiv = styled.div`
+  
   p {
+    text-align: center;
     font-size: 9.5px;
+  }
+  div {
+    display: flex;
+    justify-content: space-evenly;
   }
   .progress-dot {
     position: relative;
@@ -15,6 +21,7 @@ const StyledDiv = styled.div`
     border-radius: 50%;
     background-color: #c2c5cc;
     z-index: 10 !important;
+    margin-right: 10px;
   }
 
   .progress-link {
@@ -55,6 +62,7 @@ const StyledWeek = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     width: 249px;
     &__week {
       width: 160px;
