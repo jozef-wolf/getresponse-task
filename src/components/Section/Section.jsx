@@ -9,6 +9,7 @@ const StyledSection = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 116px;
+  flex-wrap: wrap;
 `;
 
 const Section = ({ current, setCurrent }) => {

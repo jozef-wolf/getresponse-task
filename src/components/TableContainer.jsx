@@ -5,6 +5,8 @@ import Table from "./Table/Table";
 import Aside from "./aside/Aside";
 
 const StyledContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 987px;
 `;
 
@@ -24,6 +26,9 @@ const TableContainer = () => {
 
   return (
     <StyledContainer>
+      <Section current={current} setCurrent={setCurrent} />
+      {/* Conditional templating in react */}
+      {/* {meals && <Table meals={meals} />} */}
       <Aside />
     </StyledContainer>
   );

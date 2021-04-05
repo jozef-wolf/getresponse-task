@@ -8,7 +8,7 @@ const StyledApp = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  
 `;
 
 function App() {
