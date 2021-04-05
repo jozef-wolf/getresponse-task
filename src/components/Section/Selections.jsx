@@ -11,6 +11,9 @@ import {
 const StyledDiv = styled.div`
   p {
     font-size: 9.5px;
+
+    text-align: center;
+    text-transform: uppercase;
   }
   div {
     font-size: 30px;
@@ -23,7 +26,7 @@ const Selections = () => {
   const [open, setOpen] = useState(false);
   return (
     <StyledDiv open={open} onClick={() => setOpen(!open)}>
-      <p>Select your options</p>
+      <p>Select your protein options</p>
       <div>
         <GiBroccoli />
         <GiCheeseWedge />

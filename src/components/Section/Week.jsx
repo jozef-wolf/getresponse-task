@@ -10,6 +10,7 @@ const StyledDiv = styled.div`
   }
   p {
     text-align: center;
+    text-transform: uppercase;
   }
   .progress__box {
     display: flex;
@@ -48,7 +49,7 @@ const StyledWeek = styled.div`
   position: relative;
   button:hover {
     left: 5px;
-    background-color: #adbb0c;
+    background-color: #ff801a;
     transition: ease-in 0.5s;
   }
   button {
@@ -69,15 +70,16 @@ const StyledWeek = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
     width: 249px;
     &__week {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 160px;
       height: 36px;
       font-size: 47px;
       color: #ff801a;
       line-height: 1;
-      text-align: center;
     }
   }
   .week {
