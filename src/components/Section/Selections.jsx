@@ -15,7 +15,7 @@ const StyledDiv = styled.div`
   div {
     font-size: 30px;
     color: #828282;
-    color: ${({ open }) => (open ? "lightgrey" : "green")};
+    color: ${({ open }) => (open ? "lightgrey" : "#adbb0c;")};
   }
 `;
 

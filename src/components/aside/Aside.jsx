@@ -7,8 +7,6 @@ import Android from "../imgs/android2x.png";
 const StyledAside = styled.aside`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin-top: 45px;
   height: 190px;
   flex-wrap: wrap;
@@ -72,15 +70,20 @@ const StyledAside = styled.aside`
       height: 33px;
     }
   }
-  .box__first,
-  .box__second,
-  .box__third {
+  .box__second {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 190px;
     width: 366px;
-
+  }
+  .box__first,
+  .box__third {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 190px;
+    width: 305px;
     div {
       display: flex;
       flex-direction: row;

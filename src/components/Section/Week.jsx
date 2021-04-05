@@ -4,12 +4,18 @@ import ArrowRight from "../imgs/arrow.svg";
 import ArrowLeft from "../imgs/arrowL.svg";
 
 const StyledDiv = styled.div`
+  font-size: 9.5px;
   @media (max-width: 768px) {
     margin-bottom: 30px;
   }
   p {
     text-align: center;
-    font-size: 9.5px;
+  }
+  .progress__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
   }
   div {
     display: flex;
@@ -18,12 +24,11 @@ const StyledDiv = styled.div`
   .progress-dot {
     position: relative;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #dbdbdb;
     border-radius: 50%;
-    background-color: #c2c5cc;
     z-index: 10 !important;
-    margin-right: 10px;
   }
 
   .progress-link {
@@ -40,7 +45,7 @@ const StyledDiv = styled.div`
 
   .progress-dot.active,
   .progress-link.active {
-    background-color: green;
+    background-color: #adbb0c;
   }
 `;
 
@@ -107,16 +112,18 @@ const Week = ({ current, setCurrent }) => {
 
   return (
     <>
-      <StyledDiv className="progress-container">
+      <StyledDiv>
         <p>Your 12 week progress</p>
         <div>
           {weeks.map((week, index) => (
-            <span
-              className={
-                index === current ? "progress-dot active" : "progress-dot "
-              }
-              key={index}
-            ></span>
+            <div key={index} className="progress__box">
+              <span
+                className={
+                  index === current ? "progress-dot active" : "progress-dot "
+                }
+              ></span>
+              <span>{index + 1}</span>
+            </div>
           ))}
         </div>
       </StyledDiv>
