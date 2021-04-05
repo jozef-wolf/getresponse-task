@@ -19,6 +19,9 @@ const StyledDiv = styled.div`
     font-size: 30px;
     color: #828282;
     color: ${({ open }) => (open ? "lightgrey" : "#adbb0c;")};
+    * {
+      margin-left: 13px;
+    }
   }
 `;
 
