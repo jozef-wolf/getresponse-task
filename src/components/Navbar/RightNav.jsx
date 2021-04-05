@@ -19,7 +19,26 @@ const Ul = styled.ul`
   font-size: 12.5px;
   li {
     padding: 20px 10px;
+    position: relative;
+    :hover {
+      color: #ff801a;
+    }
   }
+  li::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    left: 35%;
+    bottom: 0;
+    background: #ff801a;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+  }
+  li:hover::after {
+    transform: scale(1, 1);
+  }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: black;
