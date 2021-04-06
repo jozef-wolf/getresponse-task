@@ -9,7 +9,7 @@ const user = [
   },
 ];
 
-const Ul = styled.ul`
+const NavUl = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
@@ -70,11 +70,11 @@ const UserUl = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <>
-      <Ul open={open}>
+      <NavUl open={open}>
         <li>Dashboard</li>
         <li>Recipes</li>
         <li>Challange</li>
-      </Ul>
+      </NavUl>
       <UserUl>
         <li>
           <AiOutlineUser />
