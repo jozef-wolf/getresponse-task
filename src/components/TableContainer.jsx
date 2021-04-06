@@ -34,7 +34,9 @@ const ContainerTable = () => {
       <Section current={current} setCurrent={setCurrent} />
       {/* Conditional templating in react */}
       {/* {meals && <Table meals={meals} />} */}
-      {meals && <TableFlex meals={meals} />}
+      {meals && (
+        <TableFlex meals={meals} current={current} setCurrent={setCurrent} />
+      )}
       <Aside />
     </StyledContainer>
   );

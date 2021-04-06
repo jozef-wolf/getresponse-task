@@ -7,7 +7,9 @@ const StyledDiv = styled.div`
   font-size: 9.5px;
   @media (max-width: 768px) {
     margin-bottom: 30px;
+    display: none;
   }
+
   p {
     text-align: center;
     text-transform: uppercase;
@@ -41,6 +43,7 @@ const StyledDiv = styled.div`
 const StyledWeek = styled.div`
   @media (max-width: 768px) {
     margin-bottom: 40px;
+    display: none;
   }
   display: flex;
   justify-content: center;
