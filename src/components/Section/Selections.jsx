@@ -11,7 +11,6 @@ import {
 const StyledDiv = styled.div`
   p {
     font-size: 9.5px;
-
     text-align: center;
     text-transform: uppercase;
   }
@@ -25,7 +24,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Selections = () => {
+const FoodSelection = () => {
   const [open, setOpen] = useState(false);
   return (
     <StyledDiv open={open} onClick={() => setOpen(!open)}>
@@ -41,4 +40,4 @@ const Selections = () => {
   );
 };
 
-export default Selections;
+export default FoodSelection;

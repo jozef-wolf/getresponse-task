@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
-import Week from "./Week";
-import Selections from "./Selections";
+import WeekSelection from "./Week";
+import FoodSelection from "./Selections";
 
 const StyledSection = styled.div`
   display: flex;
@@ -18,8 +17,8 @@ const StyledSection = styled.div`
 const Section = ({ current, setCurrent }) => {
   return (
     <StyledSection>
-      <Week current={current} setCurrent={setCurrent} />
-      <Selections />
+      <WeekSelection current={current} setCurrent={setCurrent} />
+      <FoodSelection />
     </StyledSection>
   );
 };

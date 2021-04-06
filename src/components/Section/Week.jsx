@@ -14,47 +14,44 @@ const StyledDiv = styled.div`
     text-align: center;
     text-transform: uppercase;
   }
-  .progress__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10px;
-  }
-  div {
+
+  .progress {
     display: flex;
     justify-content: space-evenly;
-  }
-  .progress-dot {
-    position: relative;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #dbdbdb;
-    border-radius: 50%;
-    z-index: 10 !important;
-  }
+    .progress__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10px;
+      .progress-dot {
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #dbdbdb;
+        border-radius: 50%;
+        z-index: 10 !important;
+      }
 
-  .progress-dot.active,
-  .progress-link.active {
-    background-color: #adbb0c;
+      .progress-dot.active,
+      .progress-link.active {
+        background-color: #adbb0c;
+      }
+    }
   }
 `;
 
 const StyledWeek = styled.div`
-  @media (max-width: 768px) {
-    margin-bottom: 40px;
-    display: none;
-  }
   display: flex;
   justify-content: center;
   align-items: center;
   width: 279px;
   position: relative;
-  button:hover {
-    left: 5px;
-    background-color: #ff801a;
-    transition: ease-in 0.5s;
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+    display: none;
   }
+
   button {
     width: 24px;
     height: 42px;
@@ -65,7 +62,10 @@ const StyledWeek = styled.div`
     border: solid 1px #c0c0c0;
     border-radius: 5px;
     outline: none;
-    img {
+    &:hover {
+      left: 5px;
+      background-color: #ff801a;
+      transition: ease-in 0.5s;
     }
   }
 
@@ -84,18 +84,18 @@ const StyledWeek = styled.div`
       color: #ff801a;
       line-height: 1;
     }
-  }
-  .week {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  .week.active {
-    opacity: 1;
-    transition-duration: 1s;
+    .week {
+      opacity: 0;
+      transition-duration: 1s ease;
+    }
+    .week.active {
+      opacity: 1;
+      transition-duration: 1s;
+    }
   }
 `;
 
-const Week = ({ current, setCurrent }) => {
+const WeekSelection = ({ current, setCurrent }) => {
   const weeks = ["WEEK 1", "WEEK 2", "WEEK 3", "WEEK 4"];
 
   const length = weeks.length;
@@ -116,7 +116,7 @@ const Week = ({ current, setCurrent }) => {
     <>
       <StyledDiv>
         <p>Your 12 week progress</p>
-        <div>
+        <div className="progress">
           {weeks.map((week, index) => (
             <div key={index} className="progress__box">
               <span
@@ -151,6 +151,4 @@ const Week = ({ current, setCurrent }) => {
   );
 };
 
-export default Week;
-//  onClick = { prevWeek };
-//  onClick = { nextWeek };
+export default WeekSelection;
