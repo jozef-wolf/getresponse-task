@@ -1,14 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import TableSlider from "./TableSlider";
 import Print from "../imgs/print.svg";
 import RoundedRectangle from "../imgs/rounded-rectangle.png";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
-import TableSlider from "./TableSlider";
-
-// import Check from "../imgs/check.svg";
-// import Dumbbell from "../imgs/Dumbbell2x.png";
-
-// import Rectangle from "../imgs/rectangle2x.png";
 import Happy from "../imgs/happy2x.png";
 
 const TableContainer = styled.div`
