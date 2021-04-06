@@ -9,8 +9,12 @@ const StyledSection = styled.div`
   align-items: center;
   margin-top: 116px;
   padding-bottom: 33px;
+
   @media (max-width: 768px) {
     flex-direction: column;
+    box-shadow: 4px 2px 8px 2px #c2c2c2;
+    margin-top: 0;
+    padding: 90px 0 10px 0;
   }
 `;
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { TiChevronLeft, TiChevronRight } from "react-icons/ti";
 
 const StyledSlider = styled.div`
   display: flex;
@@ -16,6 +16,7 @@ const StyledSlider = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100vw;
     .week {
       opacity: 0;
       transition-duration: 1s ease;
@@ -25,8 +26,6 @@ const StyledSlider = styled.div`
       transition-duration: 1s;
     }
     &__card {
-      box-shadow: 4px 2px 8px 8px #c2c2c2;
-      border-radius: 40px;
       height: 450px;
       display: flex;
       flex-direction: column;
@@ -78,18 +77,16 @@ const StyledSlider = styled.div`
   }
 
   button {
-    width: 40px;
     margin: 2px;
-    height: 200px;
-    font-size: 200px;
+    font-size: 70px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: #adbb0c;
+    color: #adbb0c;
+    background-color: transparent;
     border: none;
     outline: none;
     &:hover {
-      background-color: #adbb0c;
       transition: ease-out 0.6s;
       transform: scale(1.2);
     }
@@ -106,21 +103,34 @@ const TableSlider = ({ meals, rowHeaders }) => {
   const prevWeek = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  const freeday = meals.map(function (meal) {
+    if (meal.sixAM === false) {
+      meal.sixAM = "GUILT-FREE DAY";
+    }
+    return meal;
+  });
   return (
     <StyledSlider>
-      <button className="left-arrow" onClick={prevWeek}>
-        <BsChevronCompactLeft />
-      </button>
       <div className="box">
         {meals.map((meal, index) => (
           <div
             key={index}
+            freeDay={freeday}
             className={index === current ? "week active" : "week"}
           >
             {index === current && (
               <>
                 <div className="box__card">
-                  <div className="box__card--data">DAY {meal.id}</div>
+                  <div className="box__card--data">
+                    <button className="left-arrow" onClick={prevWeek}>
+                      <TiChevronLeft />
+                    </button>
+                    DAY {meal.id}
+                    <button className="right-arrow" onClick={nextWeek}>
+                      <TiChevronRight />
+                    </button>
+                  </div>
                   <div className="box__card--day">
                     <div className="header">{rowHeaders[1]}</div>
                     <div className="meal">{meal.sixAM}</div>
@@ -155,9 +165,6 @@ const TableSlider = ({ meals, rowHeaders }) => {
           </div>
         ))}
       </div>
-      <button className="right-arrow" onClick={nextWeek}>
-        <BsChevronCompactRight />
-      </button>
     </StyledSlider>
   );
 };
