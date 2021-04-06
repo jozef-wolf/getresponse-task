@@ -27,7 +27,7 @@ const StyledSlider = styled.div`
     &__card {
       box-shadow: 4px 2px 8px 8px #c2c2c2;
       border-radius: 40px;
-      height: 500px;
+      height: 450px;
       display: flex;
       flex-direction: column;
       > div {
