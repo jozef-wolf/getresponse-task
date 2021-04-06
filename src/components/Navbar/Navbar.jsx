@@ -11,6 +11,9 @@ const Header = styled.header`
   justify-content: center;
   width: 100vw;
   z-index: 20;
+  @media (max-width: 768px) {
+    background-color: #adbb0c;
+  }
 `;
 
 const Nav = styled.nav`

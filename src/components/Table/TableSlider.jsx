@@ -36,7 +36,7 @@ const StyledSlider = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 50px;
+        font-size: 40px;
         color: #adbb0c;
         font-weight: bold;
       }
@@ -78,7 +78,7 @@ const StyledSlider = styled.div`
 
   button {
     margin: 2px;
-    font-size: 70px;
+    font-size: 60px;
     display: flex;
     align-items: center;
     cursor: pointer;
