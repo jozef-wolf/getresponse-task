@@ -37,7 +37,7 @@ const ContainerTable = () => {
       {meals && (
         <TableFlex meals={meals} current={current} setCurrent={setCurrent} />
       )}
-      {/* <Aside /> */}
+      <Aside />
     </StyledContainer>
   );
 };
