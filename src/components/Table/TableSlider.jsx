@@ -39,6 +39,7 @@ const StyledSlider = styled.div`
         justify-content: center;
         font-size: 50px;
         color: #adbb0c;
+        font-weight: bold;
       }
       &--day {
         display: flex;
