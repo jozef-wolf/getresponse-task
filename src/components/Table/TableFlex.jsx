@@ -98,16 +98,22 @@ const Column = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #adbb0c;
   }
   .column--meal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 126px;
     height: 458px;
 
     border-top: 2px solid #c2c2c2;
+    img {
+      transform: rotate(-90deg);
+    }
     p {
       color: #c2c2c2;
       font-size: 35px;
@@ -169,10 +175,8 @@ const TableFlex = ({ meals }) => {
         <Column>
           <div className="column--day">Day 7</div>
           <div className="column--meal">
-            <p>
-              <img src={Happy} alt="" />
-              Guilt Free Day
-            </p>
+            <p>Guilt Free Day</p>
+            <img src={Happy} alt="" />
           </div>
           <div className="column--print">
             <img src={Print} alt="" />
