@@ -115,7 +115,7 @@ const WeekSelection = ({ current, setCurrent }) => {
   return (
     <>
       <StyledDiv>
-        <p>Your 12 week progress</p>
+        <p>Your 4 week progress</p>
         <div className="progress">
           {weeks.map((week, index) => (
             <div key={index} className="progress__box">
