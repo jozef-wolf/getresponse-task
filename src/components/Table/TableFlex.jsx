@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-// import Print from "../imgs/print.svg";
+import Print from "../imgs/print.svg";
 import RoundedRectangle from "../imgs/rounded-rectangle.png";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
+import TableSlider from "./TableSlider";
 // import Check from "../imgs/check.svg";
 // import Dumbbell from "../imgs/Dumbbell2x.png";
 
@@ -91,79 +92,8 @@ const Freeday = styled.div`
     border: 1px solid black;
   }
 `;
-const StyledSlider = styled.div`
-  @media (max-width: 768px) {
-    margin-bottom: 40px;
-  }
-  @media (min-width: 768px) {
-    display: none;
-  }
-  .day__card {
-    border: 1px solid black;
-    border-radius: 40px;
-    div {
-      border-bottom: 2px solid black;
-      text-align: center;
-    }
-  }
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  position: relative;
-  button:hover {
-    left: 5px;
-    background-color: #ff801a;
-    transition: ease-in 0.5s;
-  }
-  button {
-    width: 24px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    background-color: transparent;
-    border: solid 1px #c0c0c0;
-    border-radius: 5px;
-    outline: none;
-    img {
-    }
-  }
-
-  .box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 450px;
-    &__week {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 47px;
-      color: #ff801a;
-      line-height: 1;
-    }
-  }
-  .week {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  .week.active {
-    opacity: 1;
-    transition-duration: 1s;
-  }
-`;
 
 const TableFlex = ({ meals }) => {
-  const [current, setCurrent] = useState(0);
-  const length = meals.length;
-
-  const nextWeek = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-  const prevWeek = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
   const rowHeaders = [
     "",
     "6:00AM",
@@ -185,33 +115,7 @@ const TableFlex = ({ meals }) => {
   });
   return (
     <>
-      <StyledSlider>
-        <button className="left-arrow" onClick={prevWeek}></button>
-        <div className="box">
-          {meals.map((meal, index) => (
-            <div
-              key={index}
-              className={index === current ? "week active" : "week"}
-            >
-              {index === current && (
-                <div className="day__card">
-                  <div className="box__week">DAY {meal.id}</div>
-                  <div className="box__week">{meal.sixAM}</div>
-                  <div className="box__week">{meal.nineAM}</div>
-                  <div className="box__week">{meal.twelveAM}</div>
-                  <div className="box__week">{meal.threePM}</div>
-                  <div className="box__week">{meal.sixPM}</div>
-                  <div className="box__week">{meal.Carb}</div>
-                  <div className="box__week">
-                    <img src={DumbbellGrey} alt="dumbbell" />
-                  </div>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-        <button className="right-arrow" onClick={nextWeek}></button>
-      </StyledSlider>
+      <TableSlider meals={meals} rowHeaders={rowHeaders} />
       <TableContainer>
         <TableHeader>
           <div className="table__header" key={rowHeaders}>
@@ -225,7 +129,6 @@ const TableFlex = ({ meals }) => {
             <div className="table__workout">{rowHeaders[7]}</div>
           </div>
         </TableHeader>
-
         {meals.slice(0, 6).map((meal) => (
           <TableColumn className="table__column" key={meal.id}>
             <div className="table__day">{meal.id}</div>
@@ -245,7 +148,10 @@ const TableFlex = ({ meals }) => {
           <div className="header__span">
             <p>Guilt Free Day</p>
           </div>
-          <div className="header__print">Print</div>
+          <div className="header__print">
+            <img src={Print} alt="" />
+            Print
+          </div>
         </Freeday>
       </TableContainer>
     </>
