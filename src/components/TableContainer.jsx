@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Section from "./Section/Section";
-import Table from "./Table/Table";
+// import Table from "./Table/Table";
+import TableFlex from "./Table/TableFlex";
 import Aside from "./aside/Aside";
 
 const StyledContainer = styled.div`
@@ -32,7 +33,8 @@ const ContainerTable = () => {
     <StyledContainer>
       <Section current={current} setCurrent={setCurrent} />
       {/* Conditional templating in react */}
-      {meals && <Table meals={meals} />}
+      {/* {meals && <Table meals={meals} />} */}
+      {meals && <TableFlex meals={meals} />}
       <Aside />
     </StyledContainer>
   );
