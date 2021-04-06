@@ -97,38 +97,36 @@ const TableColumn = styled.div`
 `;
 
 const Column = styled.div`
-color: #828282;
-    .column--day {
-      height: 50px;
-       display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .column--meal {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 126px;
-      height: 458px;
-      
-       border-top: 2px solid #c2c2c2;
-      p {
-        color: #c2c2c2;
-        font-size: 35px;
-        width: 300px;
-        text-align: center;
-        transform: rotate(-90deg);
-      }
-    }
-    .column--print {
-      height: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  color: #828282;
+  .column--day {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .column--meal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+    height: 458px;
+
+    border-top: 2px solid #c2c2c2;
+    p {
       color: #c2c2c2;
-      
+      font-size: 35px;
+      width: 300px;
+      text-align: center;
+      transform: rotate(-90deg);
     }
+  }
+  .column--print {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c2c2c2;
   }
 `;
 
