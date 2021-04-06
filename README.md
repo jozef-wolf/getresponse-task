@@ -1,13 +1,16 @@
 # Recruitment task - Diet calendar
 ### Time: 1 week.
+
 ### Technologies: 
 #### HTML, CSS, JavaSciprt, React, styled-components.
-### Work:
-#### Nagivation: 
+
+### Nagivation: 
 #### hover effect, mobile hamburger menu.
-#### Table Selections:
+
+### Table Selections:
 #### 4 week progress dots, week slider, food icons selection.
-#### Table: 
+
+### Table: 
 #### it was the most difficult section. I have created db.json file.I used json-server to get full fake REST API and fetch the data.
 #### I wanted to make semantic table but time didn't let me finish. 
 #### So I made second version using flex-box which was much easier to complete ( semantic `<Table/>` and import is commented out in TableContainer.jsx file)
