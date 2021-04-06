@@ -4,11 +4,12 @@ import Print from "../imgs/print.svg";
 import RoundedRectangle from "../imgs/rounded-rectangle.png";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 import TableSlider from "./TableSlider";
+
 // import Check from "../imgs/check.svg";
 // import Dumbbell from "../imgs/Dumbbell2x.png";
 
 // import Rectangle from "../imgs/rectangle2x.png";
-// // import Happy from "../imgs/happy2x.png";
+import Happy from "../imgs/happy2x.png";
 
 const TableContainer = styled.div`
   width: 978px;
@@ -24,72 +25,110 @@ const TableHeader = styled.div`
   display: flex;
   flex-direction: column;
   width: 85px;
-  .table__header div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .table__header--empty {
-    height: 48px;
-    border-bottom: 2px solid black;
-  }
-  .table__header--emptyRow {
-    height: 35px;
-  }
-  .table__header--time {
-    height: 90px;
-    border-bottom: 2px solid black;
+  color: #c2c2c2;
+  .table__header {
+    &--empty {
+      height: 50px;
+    }
+    &--emptyRow {
+      height: 35px;
+    }
+    &--time {
+      height: 90px;
+      border-top: 2px solid #c2c2c2;
+    }
+    &--workout {
+      height: 33px;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 const TableColumn = styled.div`
   width: 128px;
+  color: #c2c2c2;
   @media (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
   div {
-    border-left: 2px solid black;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
-  .table__day {
-    height: 48px;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-  }
-  .table__meal {
-    height: 90px;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-  }
-  .table__carb {
-    height: 35px;
-    border-bottom: 2px solid black;
-  }
-  .table__workout {
-    height: 33px;
+  .table__column {
+    &--day {
+      height: 50px;
+      border-right: 2px solid #c2c2c2;
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+      color: #adbb0c;
+      text-transform: uppercase;
+    }
+    &--meal {
+      height: 90px;
+      border-top: 2px solid #c2c2c2;
+      border-right: 2px solid #c2c2c2;
+      font-family: Arial;
+      font-size: 12.5px;
+      text-align: left;
+      padding-left: 13px;
+      padding-right: 10px;
+    }
+    &--carb {
+      height: 33px;
+      border-bottom: 2px solid #c2c2c2;
+      border-right: 2px solid #c2c2c2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--workout {
+      height: 35px;
+      border-right: 2px solid #c2c2c2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 
-const Freeday = styled.div`
-  border: 2px solid black;
-  .header {
-    height: 50px;
-    border: 1px solid black;
-  }
-  .header__span {
-    width: 125px;
-    height: 458px;
-    border-bottom: 1px solid black;
-    p {
-      text-align: center;
-      transform: rotate(-90deg);
+const Column = styled.div`
+color: #828282;
+    .column--day {
+      height: 50px;
+       display: flex;
+      align-items: center;
+      justify-content: center;
     }
-  }
-  .header__print {
-    height: 70px;
-    border: 1px solid black;
+    .column--meal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 126px;
+      height: 458px;
+      
+       border-top: 2px solid #c2c2c2;
+      p {
+        color: #c2c2c2;
+        font-size: 35px;
+        width: 300px;
+        text-align: center;
+        transform: rotate(-90deg);
+      }
+    }
+    .column--print {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #c2c2c2;
+      
+    }
   }
 `;
 
@@ -104,15 +143,6 @@ const TableFlex = ({ meals }) => {
     " ",
     "Workout",
   ];
-  const freeDay = meals.map(function (meal) {
-    if (meal.sixAM === false) {
-      meal.sixAM = "GUILT-FREE DAY";
-    }
-    if (meal.workout === false) {
-      return { DumbbellGrey };
-    }
-    return meal;
-  });
   return (
     <>
       <TableSlider meals={meals} rowHeaders={rowHeaders} />
@@ -126,33 +156,36 @@ const TableFlex = ({ meals }) => {
             <div className="table__header--time">{rowHeaders[4]}</div>
             <div className="table__header--time">{rowHeaders[5]}</div>
             <div className="table__header--emptyRow">{rowHeaders[6]}</div>
-            <div className="table__workout">{rowHeaders[7]}</div>
+            <div className="table__header--workout">{rowHeaders[7]}</div>
           </div>
         </TableHeader>
         {meals.slice(0, 6).map((meal) => (
           <TableColumn className="table__column" key={meal.id}>
-            <div className="table__day">{meal.id}</div>
-            <div className="table__meal">{meal.sixAM}</div>
-            <div className="table__meal">{meal.nineAM}</div>
-            <div className="table__meal">{meal.twelveAM}</div>
-            <div className="table__meal">{meal.threePM}</div>
-            <div className="table__meal">{meal.sixPM}</div>
-            <div className="table__carb">{meal.Carb}</div>
-            <div className="table__workout">
+            <div className="table__column--day">Day {meal.id}</div>
+            <div className="table__column--meal">{meal.sixAM}</div>
+            <div className="table__column--meal">{meal.nineAM}</div>
+            <div className="table__column--meal">{meal.twelveAM}</div>
+            <div className="table__column--meal">{meal.threePM}</div>
+            <div className="table__column--meal">{meal.sixPM}</div>
+            <div className="table__column--carb">{meal.Carb}</div>
+            <div className="table__column--workout">
               <img src={DumbbellGrey} alt="dumbbell" />
             </div>
           </TableColumn>
         ))}
-        <Freeday className="FreeDay">
-          <div className="header">Day 7</div>
-          <div className="header__span">
-            <p>Guilt Free Day</p>
+        <Column>
+          <div className="column--day">Day 7</div>
+          <div className="column--meal">
+            <p>
+              <img src={Happy} alt="" />
+              Guilt Free Day
+            </p>
           </div>
-          <div className="header__print">
+          <div className="column--print">
             <img src={Print} alt="" />
             Print
           </div>
-        </Freeday>
+        </Column>
       </TableContainer>
     </>
   );
