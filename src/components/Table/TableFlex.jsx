@@ -120,6 +120,7 @@ const Column = styled.div`
     ${FlexCenter};
     height: 70px;
     color: #c2c2c2;
+    cursor: pointer;
   }
 `;
 

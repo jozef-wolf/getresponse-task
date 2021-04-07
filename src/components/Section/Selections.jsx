@@ -20,6 +20,7 @@ const StyledDiv = styled.div`
     color: ${({ open }) => (open ? "lightgrey" : "#adbb0c;")};
     * {
       margin-left: 13px;
+      cursor: pointer;
     }
   }
 `;

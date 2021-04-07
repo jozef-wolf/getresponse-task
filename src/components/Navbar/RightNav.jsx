@@ -20,11 +20,13 @@ const NavUl = styled.ul`
   border-left: 1px solid #c9c9c9;
   margin-left: 32px;
   font-size: 12.5px;
+  color: #7c7c7c;
   li {
     padding: 20px 10px;
     position: relative;
     :hover {
       color: #ff801a;
+      cursor: pointer;
     }
   }
   li::after {
@@ -70,6 +72,9 @@ const UserUl = styled.ul`
   font-size: 15.5px;
   @media (max-width: 768px) {
     color: black;
+  }
+  li {
+    cursor: pointer;
   }
   li:first-child {
     border: 1px solid #c0c0c0;
