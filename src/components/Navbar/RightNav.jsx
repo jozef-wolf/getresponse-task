@@ -10,6 +10,9 @@ const user = [
 ];
 
 const NavUl = styled.ul`
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
   list-style: none;
   display: flex;
   align-items: center;
@@ -30,7 +33,7 @@ const NavUl = styled.ul`
     width: 25px;
     height: 2px;
     left: 35%;
-    bottom: 0;
+    margin-top: 20px;
     background: #ff801a;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
@@ -57,6 +60,7 @@ const NavUl = styled.ul`
 `;
 
 const UserUl = styled.ul`
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-around;
   color: #7c7c7c;

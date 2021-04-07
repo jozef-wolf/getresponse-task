@@ -13,6 +13,8 @@ const TableContainer = styled.div`
   display: flex;
   flex-direction: row;
   background-image: url(${RoundedRectangle});
+  background-color: white;
+  font-family: Arial;
   @media (max-width: 768px) {
     display: none;
   }
@@ -57,6 +59,7 @@ const TableColumn = styled.div`
       height: 50px;
       border-right: 2px solid #c2c2c2;
       font-size: 25px;
+      font-weight: bold;
       color: #adbb0c;
       text-transform: uppercase;
     }
@@ -64,7 +67,6 @@ const TableColumn = styled.div`
       height: 90px;
       border-top: 2px solid #c2c2c2;
       border-right: 2px solid #c2c2c2;
-      font-family: Arial;
       font-size: 12.5px;
       text-align: left;
       padding-left: 13px;
@@ -90,6 +92,7 @@ const Column = styled.div`
     ${FlexCenter};
     height: 50px;
     font-size: 25px;
+    font-weight: bold;
     text-transform: uppercase;
     color: #adbb0c;
   }

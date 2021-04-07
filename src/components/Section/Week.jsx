@@ -84,7 +84,7 @@ const StyledWeek = styled.div`
       justify-content: center;
       width: 160px;
       height: 36px;
-      font-size: 47px;
+      font-size: 42px;
       color: #ff801a;
       line-height: 1;
     }

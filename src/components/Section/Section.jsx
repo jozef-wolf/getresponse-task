@@ -4,6 +4,7 @@ import WeekSelection from "./Week";
 import FoodSelection from "./Selections";
 
 const StyledSection = styled.div`
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: center;

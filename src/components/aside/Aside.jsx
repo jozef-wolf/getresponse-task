@@ -8,6 +8,7 @@ const StyledAside = styled.aside`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
   margin-top: 45px;
   @media (max-width: 768px) {
     justify-content: center;
@@ -38,7 +39,6 @@ const StyledAside = styled.aside`
       color: #828282;
     }
     > p {
-      font-family: Arial;
       font-size: 12.5px;
       width: 237px;
       height: 35px;
