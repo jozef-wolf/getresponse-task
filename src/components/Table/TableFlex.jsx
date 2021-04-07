@@ -51,8 +51,8 @@ const TableColumn = styled.div`
     flex-wrap: wrap;
   }
   &:hover {
-    box-shadow: 0px 0px 0px 3px #ff801a;
-    border: none;
+    box-shadow: 0px 0px 1px 4px #ff801a;
+    z-index: 2;
   }
   div {
     ${FlexCenter};
