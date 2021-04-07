@@ -30,17 +30,18 @@ const StyledSlider = styled.div`
     }
 
     &__card {
-      height: 450px;
+      height: 480px;
       display: flex;
       flex-direction: column;
       > div {
         text-align: center;
+        width: 100%;
       }
       &--data {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 40px;
+        font-size: 30px;
         color: #adbb0c;
         font-weight: bold;
       }
@@ -60,16 +61,12 @@ const StyledSlider = styled.div`
           color: #c2c2c2;
           font-size: 14px;
           height: 100%;
-          width: 70px;
+          padding: 0 0 0 20px;
         }
         .meal {
-          height: 40px;
           width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          word-break: keep-all;
-
+          padding: 0 20px 0 20px;
+          text-align: right;
           font-size: 16px;
         }
       }
@@ -89,7 +86,7 @@ const StyledSlider = styled.div`
   }
 
   button {
-    font-size: 60px;
+    font-size: 40px;
     display: flex;
     color: #adbb0c;
     background-color: transparent;
