@@ -77,19 +77,12 @@ const StyledSlider = styled.div`
   }
 
   button {
-    margin: 2px;
     font-size: 60px;
     display: flex;
-    align-items: center;
-    cursor: pointer;
     color: #adbb0c;
     background-color: transparent;
     border: none;
     outline: none;
-    &:hover {
-      transition: ease-out 0.6s;
-      transform: scale(1.2);
-    }
   }
 `;
 
@@ -127,7 +120,7 @@ const TableSlider = ({ meals, rowHeaders }) => {
                       <TiChevronLeft />
                     </button>
                     DAY {meal.id}
-                    <button className="right-arrow" onClick={nextWeek}>
+                    <button className="right-arrow" onClick={prevWeek}>
                       <TiChevronRight />
                     </button>
                   </div>
