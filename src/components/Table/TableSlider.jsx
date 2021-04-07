@@ -15,10 +15,8 @@ const StyledSlider = styled.div`
   .box {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     width: 100%;
     background-color: white;
-    border-top: 2px solid #c2c2c2;
     border-bottom: 2px solid #c2c2c2;
     .week {
       opacity: 0;
@@ -30,7 +28,6 @@ const StyledSlider = styled.div`
     }
 
     &__card {
-      height: 480px;
       display: flex;
       flex-direction: column;
       > div {
@@ -44,6 +41,8 @@ const StyledSlider = styled.div`
         font-size: 40px;
         color: #adbb0c;
         font-weight: bold;
+        border-top: 2px solid #c2c2c2;
+        height: 100px;
       }
 
       &--day:nth-child(7) {
@@ -57,6 +56,7 @@ const StyledSlider = styled.div`
         border-top: 1px solid #c2c2c2;
         color: black;
         height: 100%;
+        height: 50px;
         .header {
           color: #c2c2c2;
           font-size: 14px;
@@ -64,9 +64,11 @@ const StyledSlider = styled.div`
           padding: 0 0 0 20px;
         }
         .meal {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 100%;
           padding: 0 20px 0 20px;
-          text-align: center;
           font-size: 16px;
         }
       }
