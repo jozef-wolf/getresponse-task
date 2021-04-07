@@ -17,9 +17,9 @@ const StyledSlider = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    border-bottom: 4px solid #adbb0c;
-    background-color: #f5f5f5;
-    box-shadow: 4px 2px 8px 2px #c2c2c2;
+
+    background-color: #f8f8f8;
+    box-shadow: 4px 5px 20px 1px #adbb0c;
 
     .week {
       opacity: 0;

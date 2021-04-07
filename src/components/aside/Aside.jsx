@@ -26,7 +26,7 @@ const StyledAside = styled.aside`
       height: 200px;
       text-align: center;
       width: 300px !important;
-      border-top: 2px solid #b8b8b8;
+      border-top: 2px solid #adbb0c;
     }
   }
   h2 {
