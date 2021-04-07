@@ -12,7 +12,8 @@ const StyledSection = styled.div`
   padding-bottom: 33px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    display: flex;
+    align-items: center;
     margin-top: 0;
     padding: 90px 0 10px 0;
   }
