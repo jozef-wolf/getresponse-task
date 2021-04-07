@@ -17,7 +17,6 @@ const StyledSlider = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-
     background-color: #f8f8f8;
     border-top: 2px solid #c2c2c2;
     border-bottom: 2px solid #c2c2c2;
@@ -64,12 +63,15 @@ const StyledSlider = styled.div`
           width: 70px;
         }
         .meal {
-          height: 100%;
+          height: 40px;
           width: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 16px;
+          word-break: keep-all;
+          line-height: 1.42;
+          letter-spacing: -0.47px;
+          font-size: 14px;
         }
       }
       &--workout {
