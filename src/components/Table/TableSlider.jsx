@@ -30,6 +30,7 @@ const StyledSlider = styled.div`
     &__card {
       display: flex;
       flex-direction: column;
+      width: 100vw;
       > div {
         text-align: center;
         width: 100%;
@@ -61,15 +62,15 @@ const StyledSlider = styled.div`
           color: #c2c2c2;
           font-size: 14px;
           height: 100%;
-          padding: 0 0 0 20px;
+          padding: 0 0px 0 10px;
         }
         .meal {
           display: flex;
-          justify-content: center;
+          justify-content: flex-end;
           align-items: center;
           width: 100%;
-          padding: 0 20px 0 20px;
-          font-size: 16px;
+          font-size: 18px;
+          padding-right: 50px;
         }
       }
       &--workout {
@@ -131,7 +132,9 @@ const TableSlider = ({ meals, rowHeaders }) => {
                   </div>
                   <div className="box__card--day">
                     <div className="header">{rowHeaders[1]}</div>
-                    <div className="meal">{meal.sixAM}</div>
+                    <div className="meal">
+                      <p>{meal.sixAM}</p>
+                    </div>
                   </div>
                   <div className="box__card--day">
                     <div className="header">{rowHeaders[2]}</div>
