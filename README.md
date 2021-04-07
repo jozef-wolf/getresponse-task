@@ -21,4 +21,4 @@
 #### So I made second version using flex-box which was much easier to complete ( semantic `<Table/>` and import is commented out in TableContainer.jsx file)
 #### I have made new component to make mobile version of table and used slider to change days.
 
-#### # [go to Diet Calendar](https://jozef-wolf.github.io/getresponse-task/)
+#### [go to Diet Calendar](https://jozef-wolf.github.io/getresponse-task/)
