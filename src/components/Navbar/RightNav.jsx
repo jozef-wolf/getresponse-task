@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
-import { AiOutlineUser } from "react-icons/ai";
-
+// import { AiOutlineUser } from "react-icons/ai";
+import Profile from "../imgs/profile.jpg";
 const user = [
   {
     name: "Josef Wolf",
@@ -60,10 +60,37 @@ const UserUl = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
   font-size: 15.5px;
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-around;
+  }
+  li:first-child {
+    border: 1px solid #c0c0c0;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 34px;
+      height: 34px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  li:nth-child(2) {
+    margin: 10px;
+    font-size: 15.5px;
+    line-height: 3.03;
+    text-align: left;
+    color: #7c7c7c;
+  }
+  li:last-child {
   }
 `;
 
@@ -77,10 +104,10 @@ const RightNav = ({ open }) => {
       </NavUl>
       <UserUl>
         <li>
-          <AiOutlineUser />
+          <img src={Profile} alt="" />
         </li>
+        <li>{user[0].name}</li>
         <li>
-          {user[0].name}
           <BiChevronDown />
         </li>
       </UserUl>
