@@ -4,6 +4,9 @@
 ### Technologies: 
 #### HTML, CSS, JavaSciprt, React, styled-components.
 
+##### The reason I chose styled-components is because I heared that getresponse IT team is using it and I wanted to learn it 
+
+
 ### Nagivation: 
 #### hover effect, mobile hamburger menu.
 
