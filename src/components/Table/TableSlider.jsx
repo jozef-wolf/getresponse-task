@@ -19,7 +19,7 @@ const StyledSlider = styled.div`
     width: 100vw;
 
     background-color: #f8f8f8;
-    box-shadow: 4px 5px 20px 1px #adbb0c;
+    box-shadow: 2px 0px 10px 0px #adbb0c;
 
     .week {
       opacity: 0;
