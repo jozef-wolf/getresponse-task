@@ -18,7 +18,10 @@ const ContainerTable = () => {
   const [meals, setMeals] = useState(null);
   const [current, setCurrent] = useState(0);
   useEffect(() => {
-    fetch("http://localhost:3000/meals")
+    //localhost fetch("http://localhost:3000/meals")
+    fetch(
+      "https://github.com/jozef-wolf/getresponse-task/main/src/data/db.json"
+    )
       .then((res) => {
         return res.json();
       })
