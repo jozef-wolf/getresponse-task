@@ -55,17 +55,20 @@ const StyledWeek = styled.div`
   button {
     width: 24px;
     height: 42px;
-    display: flex;
-    align-items: center;
     cursor: pointer;
     background-color: transparent;
     border: solid 1px #c0c0c0;
     border-radius: 5px;
     outline: none;
+    padding-top: 7px;
     &:hover {
       left: 5px;
       background-color: #ff801a;
       transition: ease-in 0.5s;
+    }
+    img {
+      width: 12px;
+      height: 16px;
     }
   }
 

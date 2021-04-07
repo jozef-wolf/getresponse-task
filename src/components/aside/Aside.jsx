@@ -28,25 +28,26 @@ const StyledAside = styled.aside`
       width: 300px !important;
       border-top: 2px solid #adbb0c;
     }
+    h2 {
+      font-size: 28.5px;
+      height: 55px;
+      line-height: 1;
+      letter-spacing: -0.86px;
+      text-align: left;
+      color: #828282;
+    }
+    > p {
+      font-family: Arial;
+      font-size: 12.5px;
+      width: 237px;
+      height: 35px;
+      line-height: 1.42;
+      letter-spacing: -0.47px;
+      text-align: left;
+      color: #828282;
+    }
   }
-  h2 {
-    font-size: 28.5px;
-    height: 55px;
-    line-height: 1;
-    letter-spacing: -0.86px;
-    text-align: left;
-    color: #828282;
-  }
-  > p {
-    font-family: Arial;
-    font-size: 12.5px;
-    width: 237px;
-    height: 35px;
-    line-height: 1.42;
-    letter-spacing: -0.47px;
-    text-align: left;
-    color: #828282;
-  }
+
   span:hover {
     cursor: pointer;
   }
@@ -56,6 +57,11 @@ const StyledAside = styled.aside`
     align-items: center;
     border-radius: 5px;
     border: solid 1px #b8b8b8;
+    p {
+      line-height: 1;
+      color: #a4a4a4;
+      font-size: 15.5px;
+    }
     img:first-child {
       width: 16px;
       height: 19px;
@@ -92,11 +98,11 @@ const StyledAside = styled.aside`
     div {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
     }
     span:first-child {
       width: 95px;
       height: 33px;
+      margin-right: 14px;
     }
     span:last-child {
       width: 125px;

@@ -4,12 +4,12 @@ import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 import { TiChevronLeft, TiChevronRight } from "react-icons/ti";
 
 const StyledSlider = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  @media (min-width: 769px) {
-    display: none;
+  display: none;
+  @media (max-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
   }
 
   .box {

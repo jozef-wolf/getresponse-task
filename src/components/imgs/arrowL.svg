@@ -1,7 +1,3 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="0.125in" height="0.222in">
-<path fill-rule="evenodd"  fill="rgb(125, 125, 125)"
- d="M8.999,15.175 L8.155,16.002 L-0.002,8.000 L8.155,-0.002 L8.999,0.826 L1.685,8.000 L8.999,15.175 Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="89" viewBox="0 0 50 89">
+  <image id="Warstwa_1" data-name="Warstwa 1" x="6" y="11" width="38" height="67" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABDCAYAAADwBHdHAAAB9klEQVRogeXaz03DMBQG8A9YICuwQTco3QCO3OiRGwxggeQBYAN65AYbIHUBMgJs0BGQgxOVOqnt+P2xxHdMquZXV7Gen32CCmKMWQB4A3BlrW2dSB3mUR8AGgA7ACuHU4UdoPp0ODXYBKrPTgUWQbmsxWEpKGvtRhSWioLkW5mDEoPlolxOg4/Qo24AfOagwD1iHvUS3IigwAmLoIYZPrjDCStFscAoUOQwKhQpjBJFBqNGkcA4UMUwLlQRjBM1G8aNmgWTQGXDpFDIqS6MMXdSKKSOmDHGgdxojYUchZQRi6C+OFCIjVgE1XrULrjDCdNETcK0UaOwGlABrBbUH1hNqAFWG6qDGWMeATwEd37jMOfSKPgJ9tmPyljcIvVp5Dp7+r+y8Uv4xcQDN9batTgMFeIOp4sY7t0v62XnsUScyFsaVBf+gSs/OmPpWkr+B7AlGLH9VFld9NHCUVSwLLjkxYg0LneVJIabs64Uwc1dibPjSnoXrLjSbg8bjqI/xoKj6iiS4yh7sKQ46q71MZxO17oPFS4oe0rjq9z7ia9pfMk0VesN+V97SX1KcOwbqXNxUju82TjJPfEsnPQpgmScxrmLJJzWSZUoTvNsz1HcWXBJKNvttl0ul98ALkeeeKsGc5nAdUceVGEue7gLANfW2lcA+AEV0Hm5/2lbKwAAAABJRU5ErkJggg=="/>
 </svg>

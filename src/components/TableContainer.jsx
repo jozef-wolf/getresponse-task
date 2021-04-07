@@ -3,13 +3,12 @@ import styled from "styled-components";
 import Section from "./Section/Section";
 // import Table from "./Table/Table";
 import TableFlex from "./Table/TableFlex";
-import Aside from "./aside/Aside";
 
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 987px;
-  height: 100vh;
+  height: 100%;
   @media (max-width: 768px) {
     width: 100vw;
   }
@@ -37,7 +36,6 @@ const ContainerTable = () => {
       {meals && (
         <TableFlex meals={meals} current={current} setCurrent={setCurrent} />
       )}
-      <Aside />
     </StyledContainer>
   );
 };

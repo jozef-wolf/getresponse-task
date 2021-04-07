@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Print from "../imgs/print.svg";
 import RoundedRectangle from "../imgs/rounded-rectangle.png";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
+import Rectangle from "../imgs/rectangle2x.png";
 
 const StyleTable = styled.table`
   width: 978px;
@@ -107,7 +108,10 @@ const Table = ({ meals }) => {
             </tr>
           ))}
           <tr>
-            <td>Workout</td>
+            <td>
+              Workout
+              <img src={Rectangle} alt="" />
+            </td>
             {items.map((_, id) => (
               <td className="workout__row" key={id}>
                 <img src={DumbbellGrey} alt="" />
