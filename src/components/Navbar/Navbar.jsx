@@ -9,10 +9,11 @@ const Header = styled.header`
   height: 79px;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   z-index: 20;
   @media (max-width: 768px) {
     background-color: #adbb0c;
+    width: 100%;
   }
 `;
 
@@ -29,6 +30,7 @@ const Nav = styled.nav`
     justify-content: space-between;
     width: 100%;
     margin-left: 0;
+    padding: 0;
   }
 `;
 
