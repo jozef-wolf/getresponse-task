@@ -19,8 +19,8 @@ const StyledSlider = styled.div`
     width: 100vw;
 
     background-color: #f8f8f8;
-    box-shadow: 2px 0px 10px 0px #adbb0c;
-
+    border-top: 2px solid #c2c2c2;
+    border-bottom: 2px solid #c2c2c2;
     .week {
       opacity: 0;
       transition-duration: 1s ease;
