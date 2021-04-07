@@ -56,7 +56,7 @@ const StyledSlider = styled.div`
         border-top: 1px solid #c2c2c2;
         color: black;
         height: 100%;
-        height: 50px;
+        height: 55px;
         .header {
           color: #c2c2c2;
           font-size: 14px;
