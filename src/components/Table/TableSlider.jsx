@@ -16,7 +16,7 @@ const StyledSlider = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: #f8f8f8;
     border-top: 2px solid #c2c2c2;
     border-bottom: 2px solid #c2c2c2;
