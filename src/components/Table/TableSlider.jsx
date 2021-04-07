@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
-import { TiChevronLeft, TiChevronRight } from "react-icons/ti";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 const StyledSlider = styled.div`
   display: none;
@@ -17,7 +17,7 @@ const StyledSlider = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: white;
     border-top: 2px solid #c2c2c2;
     border-bottom: 2px solid #c2c2c2;
     .week {
@@ -40,8 +40,8 @@ const StyledSlider = styled.div`
       &--data {
         display: flex;
         align-items: center;
-        justify-content: center;
-        font-size: 30px;
+        justify-content: space-around;
+        font-size: 40px;
         color: #adbb0c;
         font-weight: bold;
       }
@@ -66,7 +66,7 @@ const StyledSlider = styled.div`
         .meal {
           width: 100%;
           padding: 0 20px 0 20px;
-          text-align: right;
+          text-align: center;
           font-size: 16px;
         }
       }
@@ -86,8 +86,9 @@ const StyledSlider = styled.div`
   }
 
   button {
-    font-size: 40px;
     display: flex;
+    align-items: center;
+    font-size: 40px;
     color: #adbb0c;
     background-color: transparent;
     border: none;
@@ -119,11 +120,11 @@ const TableSlider = ({ meals, rowHeaders }) => {
                 <div className="box__card">
                   <div className="box__card--data">
                     <button className="left-arrow" onClick={prevWeek}>
-                      <TiChevronLeft />
+                      <FaChevronLeft />
                     </button>
                     DAY {meal.id}
                     <button className="right-arrow" onClick={nextWeek}>
-                      <TiChevronRight />
+                      <FaChevronRight />
                     </button>
                   </div>
                   <div className="box__card--day">
