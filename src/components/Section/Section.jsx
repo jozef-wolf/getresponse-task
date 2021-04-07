@@ -7,7 +7,7 @@ const StyledSection = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 116px;
   padding-bottom: 33px;
 
