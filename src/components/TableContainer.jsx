@@ -18,8 +18,8 @@ const ContainerTable = () => {
   const [meals, setMeals] = useState(null);
   const [current, setCurrent] = useState(0);
   useEffect(() => {
-    fetch("http://localhost:3000/meals")
-      // fetch("https://my-json-server.typicode.com/jozef-wolf/db.json/meals")
+    // fetch("http://localhost:3000/meals")
+    fetch("https://my-json-server.typicode.com/jozef-wolf/db.json/meals")
       .then((res) => {
         return res.json();
       })
