@@ -6,14 +6,13 @@ import FoodSelection from "./Selections";
 const StyledSection = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   margin-top: 116px;
   padding-bottom: 33px;
 
   @media (max-width: 768px) {
     flex-direction: column;
-
     margin-top: 0;
     padding: 90px 0 10px 0;
   }

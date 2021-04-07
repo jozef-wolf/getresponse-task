@@ -46,6 +46,7 @@ const StyledWeek = styled.div`
   align-items: center;
   width: 279px;
   position: relative;
+  margin-left: 65px;
   @media (max-width: 768px) {
     margin-bottom: 40px;
     display: none;
