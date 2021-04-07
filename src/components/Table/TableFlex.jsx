@@ -6,6 +6,7 @@ import RoundedRectangle from "../imgs/rounded-rectangle.png";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 import Happy from "../imgs/happy2x.png";
 import FlexCenter from "../FlexCenter";
+
 const TableContainer = styled.div`
   width: 978px;
   height: 580px;

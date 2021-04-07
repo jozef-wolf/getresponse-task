@@ -108,19 +108,12 @@ const TableSlider = ({ meals, rowHeaders }) => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  const freeday = meals.map(function (meal) {
-    if (meal.sixAM === false) {
-      meal.sixAM = "GUILT-FREE DAY";
-    }
-    return meal;
-  });
   return (
     <StyledSlider>
       <div className="box">
         {meals.map((meal, index) => (
           <div
             key={index}
-            freeDay={freeday}
             className={index === current ? "week active" : "week"}
           >
             {index === current && (

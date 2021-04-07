@@ -18,6 +18,7 @@ const StyledAside = styled.aside`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 190px;
     text-align: left;
     @media (max-width: 768px) {
@@ -83,8 +84,8 @@ const StyledAside = styled.aside`
     height: 190px;
     text-align: left;
     width: 316px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
     padding-left: 48px;
     @media (max-width: 768px) {
       border-left: none;

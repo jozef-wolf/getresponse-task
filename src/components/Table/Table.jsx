@@ -125,9 +125,3 @@ const Table = ({ meals }) => {
 };
 
 export default Table;
-// const freeDay = meals.map(function (meal) {
-//   if (meal.sixAM === false) {
-//     meal.sixAM = "GUILT-FREE DAY";
-//   }
-//   return meal;
-// });

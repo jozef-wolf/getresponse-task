@@ -57,14 +57,15 @@ const NavUl = styled.ul`
 `;
 
 const UserUl = styled.ul`
-  list-style: none;
   display: flex;
+  justify-content: space-around;
+  color: #7c7c7c;
   flex-direction: row;
   align-items: center;
+  list-style: none;
   font-size: 15.5px;
-  @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-around;
+  @media (max-width: 768px) {
+    color: black;
   }
   li:first-child {
     border: 1px solid #c0c0c0;
@@ -88,9 +89,6 @@ const UserUl = styled.ul`
     font-size: 15.5px;
     line-height: 3.03;
     text-align: left;
-    color: #7c7c7c;
-  }
-  li:last-child {
   }
 `;
 
