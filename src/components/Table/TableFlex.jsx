@@ -50,13 +50,14 @@ const TableColumn = styled.div`
     display: flex;
     flex-wrap: wrap;
   }
+  &:hover {
+    box-shadow: 0px 0px 0px 3px #ff801a;
+    border: none;
+  }
   div {
     ${FlexCenter};
   }
   .table__column {
-    &:hover {
-      background-color: red;
-    }
     &--day {
       ${FlexCenter};
       height: 50px;
@@ -91,6 +92,10 @@ const TableColumn = styled.div`
 
 const Column = styled.div`
   color: #828282;
+  &:hover {
+    box-shadow: 0px 0px 0px 3px #ff801a;
+    border: none;
+  }
   .column--day {
     ${FlexCenter};
     height: 50px;
