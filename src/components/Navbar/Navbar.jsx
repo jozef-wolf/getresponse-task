@@ -27,7 +27,7 @@ const Nav = styled.nav`
   @media (max-width: 768px) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     margin-left: 0;
   }
 `;

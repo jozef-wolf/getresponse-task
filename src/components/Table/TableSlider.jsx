@@ -69,9 +69,8 @@ const StyledSlider = styled.div`
           justify-content: center;
           align-items: center;
           word-break: keep-all;
-          line-height: 1.42;
-          letter-spacing: -0.47px;
-          font-size: 14px;
+
+          font-size: 16px;
         }
       }
       &--workout {
