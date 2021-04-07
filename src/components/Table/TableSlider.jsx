@@ -29,6 +29,7 @@ const StyledSlider = styled.div`
       opacity: 1;
       transition-duration: 1s;
     }
+
     &__card {
       height: 450px;
       display: flex;
@@ -44,12 +45,17 @@ const StyledSlider = styled.div`
         color: #adbb0c;
         font-weight: bold;
       }
+
+      &--day:nth-child(7) {
+        color: #ff801a;
+        font-weight: bold;
+      }
+
       &--day {
         display: flex;
         flex-direction: row;
         border-top: 1px solid #c2c2c2;
         color: black;
-        align-items: center;
         height: 100%;
         .header {
           color: #c2c2c2;
@@ -60,14 +66,15 @@ const StyledSlider = styled.div`
         .meal {
           height: 100%;
           width: 100%;
-          justify-content: center;
           display: flex;
+          justify-content: center;
           align-items: center;
           font-size: 16px;
         }
       }
       &--workout {
         border-top: 1px solid #c2c2c2;
+        color: #adbb0c;
         p {
           font-size: 20px;
           font-weight: bold;
@@ -124,7 +131,7 @@ const TableSlider = ({ meals, rowHeaders }) => {
                       <TiChevronLeft />
                     </button>
                     DAY {meal.id}
-                    <button className="right-arrow" onClick={prevWeek}>
+                    <button className="right-arrow" onClick={nextWeek}>
                       <TiChevronRight />
                     </button>
                   </div>
