@@ -32,7 +32,6 @@ const StyledSlider = styled.div`
       flex-direction: column;
       width: 100vw;
       > div {
-        text-align: center;
         width: 100%;
       }
       &--data {
@@ -68,6 +67,7 @@ const StyledSlider = styled.div`
           display: flex;
           justify-content: flex-end;
           align-items: center;
+          text-align: right;
           width: 100%;
           font-size: 18px;
           padding-right: 50px;
@@ -76,6 +76,7 @@ const StyledSlider = styled.div`
       &--workout {
         border-top: 1px solid #c2c2c2;
         color: #adbb0c;
+        text-align: center;
         p {
           font-size: 20px;
           font-weight: bold;

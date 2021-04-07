@@ -54,6 +54,9 @@ const TableColumn = styled.div`
     ${FlexCenter};
   }
   .table__column {
+    &:hover {
+      background-color: red;
+    }
     &--day {
       ${FlexCenter};
       height: 50px;
