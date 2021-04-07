@@ -38,11 +38,11 @@ const StyledSlider = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 40px;
+        font-size: 35px;
         color: #adbb0c;
         font-weight: bold;
         border-top: 2px solid #c2c2c2;
-        height: 100px;
+        height: 90px;
       }
 
       &--day:nth-child(7) {
@@ -92,7 +92,7 @@ const StyledSlider = styled.div`
   button {
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
     color: #adbb0c;
     background-color: transparent;
     border: none;
