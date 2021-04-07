@@ -18,10 +18,8 @@ const ContainerTable = () => {
   const [meals, setMeals] = useState(null);
   const [current, setCurrent] = useState(0);
   useEffect(() => {
-    //localhost fetch("http://localhost:3000/meals")
-    fetch(
-      "https://github.com/jozef-wolf/getresponse-task/gh-pages/src/data/db.json"
-    )
+    // fetch("http://localhost:3000/meals")
+    fetch("https://github.com/jozef-wolf/db.json/main/db.json")
       .then((res) => {
         return res.json();
       })
