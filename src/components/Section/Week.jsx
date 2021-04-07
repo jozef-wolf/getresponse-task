@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ArrowRight from "../imgs/arrow.svg";
-import ArrowLeft from "../imgs/arrowL.svg";
-
+import ArrowRight from "../imgs/arrowR.png";
+import ArrowLeft from "../imgs/arrowL.png";
 const StyledDiv = styled.div`
   font-size: 9.5px;
   @media (max-width: 768px) {
@@ -60,7 +59,9 @@ const StyledWeek = styled.div`
     border: solid 1px #c0c0c0;
     border-radius: 5px;
     outline: none;
-    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
       left: 5px;
       background-color: #ff801a;
@@ -127,7 +128,7 @@ const WeekSelection = ({ current, setCurrent }) => {
                   index === current ? "progress-dot active" : "progress-dot "
                 }
               ></span>
-              <span>{index + 1}</span>
+              <span>{week.slice(4)}</span>
             </div>
           ))}
         </div>
