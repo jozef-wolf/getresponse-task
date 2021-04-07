@@ -26,7 +26,7 @@ const StyledAside = styled.aside`
       margin: 30px;
       height: 200px;
       text-align: center;
-      width: 300px !important;
+      width: 250px !important;
       border-top: 2px solid #adbb0c;
     }
     h2 {
