@@ -92,7 +92,7 @@ const StyledSlider = styled.div`
   button {
     display: flex;
     align-items: center;
-    font-size: 50px;
+    font-size: 40px;
     color: #adbb0c;
     background-color: transparent;
     border: none;
@@ -126,7 +126,7 @@ const TableSlider = ({ meals, rowHeaders }) => {
                     <button className="left-arrow" onClick={prevWeek}>
                       <FaChevronLeft />
                     </button>
-                    DAY {meal.id}
+                    <p>DAY {meal.id}</p>
                     <button className="right-arrow" onClick={nextWeek}>
                       <FaChevronRight />
                     </button>
