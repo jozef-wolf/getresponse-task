@@ -69,7 +69,7 @@ const StyledSlider = styled.div`
           align-items: center;
           text-align: right;
           width: 100%;
-          font-size: 18px;
+          font-size: 16px;
           padding-right: 50px;
         }
       }
