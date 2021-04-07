@@ -5,7 +5,7 @@ import Print from "../imgs/print.svg";
 import RoundedRectangle from "../imgs/rounded-rectangle.png";
 import DumbbellGrey from "../imgs/DumbbellGrey2x.png";
 import Happy from "../imgs/happy2x.png";
-
+import FlexCenter from "../FlexCenter";
 const TableContainer = styled.div`
   width: 978px;
   height: 580px;
@@ -36,9 +36,7 @@ const TableHeader = styled.div`
       height: 33px;
     }
     div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      ${FlexCenter};
     }
   }
 `;
@@ -50,15 +48,13 @@ const TableColumn = styled.div`
     flex-wrap: wrap;
   }
   div {
-    display: flex;
-    align-items: center;
+    ${FlexCenter};
   }
   .table__column {
     &--day {
+      ${FlexCenter};
       height: 50px;
       border-right: 2px solid #c2c2c2;
-      display: flex;
-      justify-content: center;
       font-size: 25px;
       color: #adbb0c;
       text-transform: uppercase;
@@ -74,19 +70,15 @@ const TableColumn = styled.div`
       padding-right: 10px;
     }
     &--carb {
+      ${FlexCenter};
       height: 33px;
       border-bottom: 2px solid #c2c2c2;
       border-right: 2px solid #c2c2c2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
     &--workout {
+      ${FlexCenter};
       height: 35px;
       border-right: 2px solid #c2c2c2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 `;
@@ -94,10 +86,8 @@ const TableColumn = styled.div`
 const Column = styled.div`
   color: #828282;
   .column--day {
+    ${FlexCenter};
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 25px;
     text-transform: uppercase;
     color: #adbb0c;
@@ -123,10 +113,8 @@ const Column = styled.div`
     }
   }
   .column--print {
+    ${FlexCenter};
     height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #c2c2c2;
   }
 `;
