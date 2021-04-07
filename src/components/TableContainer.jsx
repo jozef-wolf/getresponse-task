@@ -19,7 +19,7 @@ const ContainerTable = () => {
   const [current, setCurrent] = useState(0);
   useEffect(() => {
     // fetch("http://localhost:3000/meals")
-    fetch("https://github.com/jozef-wolf/db.json/blob/[main|master]/db.json")
+    fetch("https://jozef-wolf.github.io/db.json/main/db.json")
       .then((res) => {
         return res.json();
       })
